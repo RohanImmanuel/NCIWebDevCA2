@@ -1,3 +1,7 @@
+.text-justify{
+    text-align: justify;
+}
+
 .navbar-brand img{
     filter: invert(100%);
     margin-right: 0.5em;
