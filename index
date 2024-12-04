@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Discover Dublin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/bridge.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                DiscoverDublin
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/attractions.html">Attractions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Transportation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="home-hero container-fluid p-0 shadow">
+        <div class="row g-0">
+            <div class="col-md-6 my-auto py-5">
+                <img src="img/bridge.png" class="hero-icon" />
+                <h2 id="hero-title">
+                    Discover
+                    <br />
+                    Dublin
+                </h2>
+                <a class="btn btn-outline-warning btn-lg" href="html/attractions.html">Explore Attractions &#8677;</a>
+            </div>
+            <div class="col-md-6">
+                <video id="hero-video" class="min-vh-100 w-100" autoplay preload muted loop playsinline>
+                    <source src="videos/dublin.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="row g-0 justify-content-md-center text-center subscribe">
+            <div class="col-md-8 p-5">
+                <div class="shadow rounded subscribe-box p-5 text-center">
+                    <h1>We are trusted by over 5000+ users</h1>
+                    <h3>Subscribe to our newsletter and explore</h3>
+                    <input
+                        class="form-control form-control-lg my-3 mx-auto text-center border border-warning"
+                        type="email"
+                        placeholder="your@email.com" id="subscribe-input-1" />
+                    <button class="btn btn-warning btn-lg d-inline-block subscribe-btn" data-subscribe-btn-for="subscribe-input-1">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 home-ft">
+        <div class="row">
+            <div class="col-md-6 home-ft-image home-attractions shadow"></div>
+            <div class="col-md-6 my-auto p-5">
+                <h2 class="display-2">Attractions</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias suscipit temporibus
+                    perspiciatis animi, officiis ratione libero illum facilis vitae quis hic quod nostrum maxime
+                    modi a omnis tempore laudantium.
+                </p>
+                <p><a class="btn btn-warning btn-lg" href="html/attractions.html">Learn More &#8677;</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 home-ft-image home-restaurants shadow order-md-2"></div>
+            <div class="col-md-6 my-auto order-md-1 p-5 text-md-end">
+                <h2 class="display-2">Restaurants</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias suscipit temporibus
+                    perspiciatis animi, officiis ratione libero illum facilis vitae quis hic quod nostrum maxime
+                    modi a omnis tempore laudantium.
+                </p>
+                <p><a class="btn btn-warning btn-lg" href="#">Learn More &#8677;</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 home-ft-image home-transportation shadow"></div>
+            <div class="col-md-6 my-auto p-5">
+                <h2 class="display-2">Transportation</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias suscipit temporibus
+                    perspiciatis animi, officiis ratione libero illum facilis vitae quis hic quod nostrum maxime
+                    modi a omnis tempore laudantium.
+                </p>
+                <p><a class="btn btn-warning btn-lg" href="#">Learn More &#8677;</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials mt-5 py-5">
+        <h1 class="testimonials-title display-1">&#10094; Testimonials &#10095;</h1>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data--bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="shadow card">
+                                    <div class="card-body text-center">
+                                        <img src="img/users/1.jpg" class="img-thumbnail w-50 rounded-circle" />
+                                        <h3 class="mb-auto mx-3">Lorem ipsum</h3>
+                                        <p class="text-warning">&starf;&starf;&starf;&starf;&star;</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            optio, cupiditate tempore ipsum eius consequuntur repellat odit, sit
+                                            corporis fuga excepturi velit perspiciatis pariatur cum. Voluptatem
+                                            dolores maxime vitae veritatis!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <div class="shadow card">
+                                    <div class="card-body text-center">
+                                        <img src="img/users/2.jpg" class="img-thumbnail w-50 rounded-circle" />
+                                        <h3 class="mb-auto mx-3">Lorem ipsum</h3>
+                                        <p class="text-warning">&starf;&starf;&starf;&starf;&star;</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            optio, cupiditate tempore ipsum eius consequuntur repellat odit, sit
+                                            corporis fuga excepturi velit perspiciatis pariatur cum. Voluptatem
+                                            dolores maxime vitae veritatis!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <div class="shadow card">
+                                    <div class="card-body text-center">
+                                        <img src="img/users/3.jpg" class="img-thumbnail w-50 rounded-circle" />
+                                        <h3 class="mb-auto mx-3">Lorem ipsum</h3>
+                                        <p class="text-warning">&starf;&starf;&starf;&starf;&star;</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            optio, cupiditate tempore ipsum eius consequuntur repellat odit, sit
+                                            corporis fuga excepturi velit perspiciatis pariatur cum. Voluptatem
+                                            dolores maxime vitae veritatis!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <div class="shadow card">
+                                    <div class="card-body text-center">
+                                        <img src="img/users/4.jpg" class="img-thumbnail w-50 rounded-circle" />
+                                        <h3 class="mb-auto mx-3">Lorem ipsum</h3>
+                                        <p class="text-warning">&starf;&starf;&starf;&starf;&star;</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            optio, cupiditate tempore ipsum eius consequuntur repellat odit, sit
+                                            corporis fuga excepturi velit perspiciatis pariatur cum. Voluptatem
+                                            dolores maxime vitae veritatis!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="shadow card">
+                                    <div class="card-body text-center">
+                                        <img src="img/users/5.jpg" class="img-thumbnail w-50 rounded-circle" />
+                                        <h3 class="mb-auto mx-3">Lorem ipsum</h3>
+                                        <p class="text-warning">&starf;&starf;&starf;&starf;&star;</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            optio, cupiditate tempore ipsum eius consequuntur repellat odit, sit
+                                            corporis fuga excepturi velit perspiciatis pariatur cum. Voluptatem
+                                            dolores maxime vitae veritatis!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <div class="shadow card">
+                                    <div class="card-body text-center">
+                                        <img src="img/users/6.jpg" class="img-thumbnail w-50 rounded-circle" />
+                                        <h3 class="mb-auto mx-3">Lorem ipsum</h3>
+                                        <p class="text-warning">&starf;&starf;&starf;&starf;&star;</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            optio, cupiditate tempore ipsum eius consequuntur repellat odit, sit
+                                            corporis fuga excepturi velit perspiciatis pariatur cum. Voluptatem
+                                            dolores maxime vitae veritatis!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <div class="shadow card">
+                                    <div class="card-body text-center">
+                                        <img src="img/users/7.jpg" class="img-thumbnail w-50 rounded-circle" />
+                                        <h3 class="mb-auto mx-3">Lorem ipsum</h3>
+                                        <p class="text-warning">&starf;&starf;&starf;&starf;&star;</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            optio, cupiditate tempore ipsum eius consequuntur repellat odit, sit
+                                            corporis fuga excepturi velit perspiciatis pariatur cum. Voluptatem
+                                            dolores maxime vitae veritatis!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <div class="shadow card">
+                                    <div class="card-body text-center">
+                                        <img src="img/users/8.jpg" class="img-thumbnail w-50 rounded-circle" />
+                                        <h3 class="mb-auto mx-3">Lorem ipsum</h3>
+                                        <p class="text-warning">&starf;&starf;&starf;&starf;&star;</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            optio, cupiditate tempore ipsum eius consequuntur repellat odit, sit
+                                            corporis fuga excepturi velit perspiciatis pariatur cum. Voluptatem
+                                            dolores maxime vitae veritatis!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="shadow bg-dark text-bg-dark mt-auto">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-2">
+                    <img src="img/bridge.png" alt="" class="footer-icon" />
+                    <h5 class="dispaly-5">Brand Name</h5>
+                </div>
+                <div class="col-md-3 ft-menu">
+                    <h5 class="dispaly-5">Menu</h5>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Lorem.</a>
+                    </p>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Facere!</a>
+                    </p>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Maiores.</a>
+                    </p>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Omnis!</a>
+                    </p>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3">Esse?</a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/earth-globe.png" class="d-block footer-icon m-auto my-5" alt="" />
+                </div>
+                <div class="col-md-4">
+                    <h5 class="dispaly-5">Stay up to date</h5>
+                    <div class="input-group input-group-lg my-3">
+                        <input type="text" class="form-control" placeholder="your@email.com" id="subscribe-input-2"/>
+                        <button class="subscribe-btn btn btn-warning" data-subscribe-btn-for="subscribe-input-2" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center py-3 sub-footer">
+                <div class="col-md-6 text-md-start">&copy; 2024-2025 Discover Dublin</div>
+                <div class="col-md-6 text-md-end">socail icons</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2@11.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
