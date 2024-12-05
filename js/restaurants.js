@@ -12,6 +12,8 @@ function toggleAccordionBasedOnScreenSize() {
 }
 
 function showWindow(r) {
+    $('#window-image').attr('src', r.image);
+    $('#window-image').attr('alt', 'Image of ' + r.name);
     $('#window-name').text(r.name);
     $('#window-description').text(r.description);
     $('#window-rating').text(r.rating);
@@ -19,6 +21,7 @@ function showWindow(r) {
     $('#window-priceRange').text(r.priceRange);
     $('#window-address').text(r.address);
     $('#window-phone').text(r.phone);
+    $('#window-phone').attr('href', "tel:" + r.phone.replace(/\s+/g, ""));
     $('#window-link').text(r.website);
     $('#window-link').attr('href', r.website);
     $('#window').show();
@@ -76,7 +79,7 @@ function updateList(list) {
         let elm = $(`
             <div class="col-md-6 col-lg-4">
                 <div class="card mb-3 shadow">
-                    <img src="img/restaurants/restaurantsCommon.jpg" class="card-img-top" alt="..." />
+                    <img id="card-image" src="${list[i].image}" class="card-img-top" alt="Image of ${list[i].name}" />
                         <div class="card-body">
                             <h5 class="card-title">${list[i].name}</h5>
                             <p class="card-text text-truncate">${list[i].description}</p>
@@ -90,7 +93,6 @@ function updateList(list) {
                 </div>`);
         lv.append(elm);
         elm.on('click', function() {
-            console.log('click', list[i]);
             showWindow(list[i]);
         });
     }

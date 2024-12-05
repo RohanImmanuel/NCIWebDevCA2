@@ -13,6 +13,7 @@ const restaurants = [
     },
     rating: 4.9,
     priceRange: "€€€€",
+    image: 'img/restaurants/1.jpg'
   },
   {
     name: "Pickle",
@@ -28,6 +29,7 @@ const restaurants = [
     },
     rating: 4.8,
     priceRange: "€€€",
+    image: 'img/restaurants/2.webp'
   },
   {
     name: "SOLE Seafood & Grill",
@@ -43,6 +45,7 @@ const restaurants = [
     },
     rating: 4.7,
     priceRange: "€€€€",
+    image: 'img/restaurants/3.jpg'
   },
   {
     name: "Liath",
@@ -58,6 +61,7 @@ const restaurants = [
     },
     rating: 4.9,
     priceRange: "€€€€",
+    image: 'img/restaurants/4.webp'
   },
   {
     name: "Hang Dai",
@@ -73,6 +77,7 @@ const restaurants = [
     },
     rating: 4.6,
     priceRange: "€€€",
+    image: 'img/restaurants/5.jpg'
   },
   {
     name: "Uno Mas",
@@ -88,6 +93,7 @@ const restaurants = [
     },
     rating: 4.7,
     priceRange: "€€€",
+    image: 'img/restaurants/6.jpg'
   },
   {
     name: "Forest Avenue",
@@ -103,6 +109,7 @@ const restaurants = [
     },
     rating: 4.8,
     priceRange: "€€€€",
+    image: 'img/restaurants/7.webp'
   },
   {
     name: "Amy Austin",
@@ -118,6 +125,7 @@ const restaurants = [
     },
     rating: 4.5,
     priceRange: "€€",
+    image: 'img/restaurants/8.jpg'
   },
   {
     name: "Bastible",
@@ -133,6 +141,7 @@ const restaurants = [
     },
     rating: 4.8,
     priceRange: "€€€€",
+    image: 'img/restaurants/9.jpg'
   },
   {
     name: "Variety Jones",
@@ -148,6 +157,7 @@ const restaurants = [
     },
     rating: 4.7,
     priceRange: "€€€",
+    image: 'img/restaurants/10.jpg'
     },
   {
     name: "Glovers Alley",
@@ -163,6 +173,7 @@ const restaurants = [
     },
     rating: 4.7,
     priceRange: "€€€€",
+    image: 'img/restaurants/11.jpg'
   },
   {
     name: "The Seafood Café",
@@ -178,6 +189,7 @@ const restaurants = [
     },
     rating: 4.5,
     priceRange: "€€€",
+    image: 'img/restaurants/12.jpg'
   },
   {
     name: "Dax Restaurant",
@@ -193,6 +205,7 @@ const restaurants = [
     },
     rating: 4.8,
     priceRange: "€€€€",
+    image: 'img/restaurants/13.jpg'
   },
   {
     name: "Featherblade",
@@ -208,6 +221,7 @@ const restaurants = [
     },
     rating: 4.6,
     priceRange: "€€€",
+    image: 'img/restaurants/14.jpg'
   },
   {
     name: "Delahunt",
@@ -223,6 +237,7 @@ const restaurants = [
     },
     rating: 4.7,
     priceRange: "€€€",
+    image: 'img/restaurants/15.webp'
   },
   {
     name: "Richmond",
@@ -238,6 +253,7 @@ const restaurants = [
     },
     rating: 4.6,
     priceRange: "€€€",
+    image: 'img/restaurants/16.jpeg'
   },
   {
     name: "Paulie's Pizza",
@@ -253,6 +269,7 @@ const restaurants = [
     },
     rating: 4.5,
     priceRange: "€€",
+    image: 'img/restaurants/17.jpg'
   },
   {
     name: "Pi Pizza",
@@ -268,6 +285,7 @@ const restaurants = [
     },
     rating: 4.8,
     priceRange: "€€",
+    image: 'img/restaurants/18.jpeg'
   },
   {
     name: "Shouk",
@@ -283,6 +301,7 @@ const restaurants = [
     },
     rating: 4.8,
     priceRange: "€€",
+    image: 'img/restaurants/19.jpg'
   },
   {
     name: "The Fumbally",
@@ -298,6 +317,7 @@ const restaurants = [
     },
     rating: 4.5,
     priceRange: "€€",
+    image: 'img/restaurants/20.webp'
   },
   {
     name: "WUFF",
@@ -313,6 +333,7 @@ const restaurants = [
     },
     rating: 4.6,
     priceRange: "€€",
+    image: 'img/restaurants/21.jpg'
   },
   {
     name: "The Happy Pear",
@@ -328,6 +349,7 @@ const restaurants = [
     },
     rating: 4.6,
     priceRange: "€€",
+    image: 'img/restaurants/22.jpg'
   },
   {
     name: "Bunsen",
@@ -343,5 +365,6 @@ const restaurants = [
     },
     rating: 4.7,
     priceRange: "€€",
+    image: 'img/restaurants/23.webp'
   },
 ];

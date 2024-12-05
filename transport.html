@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Discover Dublin</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/fa.min.css" />
+        <link rel="stylesheet" href="css/rohan.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/bridge.png" alt="Logo" width="30" class="d-inline-block align-text-top" />
+                    DiscoverDublin
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Attractions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Transportation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <video class="min-vh-100 w-100" autoplay preload muted loop playsinline>
+                <source src="videos/transport.mp4" type="video/mp4" />
+            </video>
+            <h1 class="display-1">
+                Your Guide to Getting Around Dublin
+                <small
+                    >Dublin’s transport system is designed to make travel easy <br />
+                    whether you’re exploring the city or heading to the coast</small
+                >
+            </h1>
+            <i class="fa-regular fa-circle-down"></i>
+        </header>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-1 public-transpoart-title shadow rounded-top">
+                        <i class="fa-solid fa-train-subway"></i> Public Transport
+                    </h1>
+                    <iframe
+                        id="public-transport-map"
+                        class="shadow rounded-bottom"
+                        title="public-transport-map"
+                        src="https://journeyplanner-production.transportforireland.ie/departures?wrapper=false&"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5 home-ft">
+            <div class="row">
+                <div class="col-lg-6 home-ft-image transport-dbbikes shadow"></div>
+                <div class="col-lg-6 my-auto p-5">
+                    <h2 class="display-2 pt-5"><i class="fa-solid fa-person-biking"></i> Dublin Bikes</h2>
+                    <p>Dublin Bikes is an eco-friendly, convenient, and affordable way to explore the city.</p>
+                    <dl class="row">
+                        <dt class="col-sm-3">How It Works:</dt>
+                        <dd class="col-sm-9">
+                            <p class="my-0"><i class="fa-solid fa-person-biking"></i> Over 100 docking stations located across the city.</p>
+                            <p class="my-0"><i class="fa-solid fa-stopwatch"></i> First 30 minutes of every trip is free.</p>
+                        </dd>
+                        
+                        <dt class="col-sm-3">Pricing:</dt>
+                        <dd class="col-sm-9">
+                            <p class="my-0">€3.5 for a day pass.</p>
+                            <p class="my-0">€5 for a 3-day pass.</p>
+                        </dd>
+                    </dl>
+                    <p>
+                        <a class="btn btn-lg btn-info" target="_blank" href="#" role="button"><i class="fa-solid fa-globe me-1"></i> Dublin Bikes</a>
+                        <a class="btn btn-lg btn-success" target="_blank" href="#" role="button"><i class="fa-brands fa-google-play me-1"></i>Play Store</a>
+                        <a class="btn btn-lg btn-dark" target="_blank" href="#" role="button"><i class="fa-brands fa-app-store-ios me-1"></i> App Store</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 home-ft-image transport-taxi shadow order-lg-2"></div>
+                <div class="col-lg-6 my-auto order-md-1 p-5 text-lg-end">
+                    <h2 class="display-2"><i class="fa-solid fa-taxi"></i> Taxis</h2>
+                    <p>Taxis are widely available in Dublin, with several app-based services for convenience. Average Fares of ity Centre <i class="fa-solid fa-arrow-right-arrow-left"></i> Airport: ~€25–€30</p>
+                    <p>
+                        <a href="https://www.free-now.com/ie/" class="btn btn-lg btn-primary mb-3" target="_blank"><i class="fas fa-taxi"></i> FREENOW</a>
+                        <a href="https://www.lynk.ie/" class="btn btn-lg btn-secondary mb-3" target="_blank"><i class="fas fa-taxi"></i> Lynk Taxis</a>
+                        <a href="https://www.uber.com/ie/en/" class="btn btn-lg btn-info mb-3" target="_blank"><i class="fas fa-taxi"></i> Uber Ireland</a>
+                        <a href="https://viptaxis.ie/" class="btn btn-lg btn-success mb-3" target="_blank"><i class="fas fa-taxi"></i> VIP Taxis</a>
+                        <a href="https://www.boundlessroads.com/taxi-apps-in-ireland/" class="btn btn-lg btn-warning mb-3" target="_blank"><i class="fas fa-taxi"></i> Cab2000</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 home-ft-image transport-car-rentals shadow"></div>
+                <div class="col-lg-6 my-auto p-5">
+                    <h2 class="display-2"><i class="fa-solid fa-car-rear"></i> Car Rentals</h2>
+                    <p>For those looking to explore beyond the city, renting a car is an excellent option.</p>
+                    <dl class="row">
+                        <dt class="col-sm-3">Tips:</dt>
+                        <dd class="col-sm-9">
+                            <p class="my-0">Ireland drives on the left side of the road.</p>
+                            <p class="my-0">Book early for the best rates.</p>
+                        </dd>
+                    </dl>
+                    <p>
+                        <a href="https://www.enterprise.com/en/car-rental-locations/ie/dublin.html" class="btn btn-lg btn-primary mb-3" target="_blank"><i class="fas fa-car"></i> Enterprise</a>
+                        <a href="https://www.budget.ie/dublinairport.htm" class="btn btn-lg btn-secondary mb-3" target="_blank"><i class="fas fa-car"></i> Budget</a>
+                        <a href="https://www.irishcarrentals.com/location/car-rental-dublin-airport" class="btn btn-lg btn-info mb-3" target="_blank"><i class="fas fa-car"></i> Irish Car Rentals</a>
+                        <a href="https://www.sixt.com/car-rental/ireland/dublin/" class="btn btn-lg btn-success mb-3" target="_blank"><i class="fas fa-car"></i> SIXT</a>
+                        <a href="https://www.hertz.ie/p/car-hire/ireland/dublin" class="btn btn-lg btn-warning mb-3" target="_blank"><i class="fas fa-car"></i> Hertz</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="shadow bg-dark text-bg-dark mt-auto">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-2">
+                        <img src="img/bridge.png" alt="" class="footer-icon" />
+                        <h5 class="dispaly-5">Brand Name</h5>
+                    </div>
+                    <div class="col-md-3 ft-menu">
+                        <h5 class="dispaly-5">Menu</h5>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Lorem.</a>
+                        </p>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Facere!</a>
+                        </p>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Maiores.</a>
+                        </p>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Omnis!</a>
+                        </p>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3">Esse?</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/earth-globe.png" class="d-block footer-icon m-auto my-5" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="dispaly-5">Stay up to date</h5>
+                        <div class="input-group input-group-lg my-3">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="your@email.com"
+                                id="subscribe-input-2" />
+                            <button
+                                class="subscribe-btn btn btn-warning"
+                                data-subscribe-btn-for="subscribe-input-2"
+                                type="button">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center py-3 sub-footer">
+                    <div class="col-md-6 text-md-start">&copy; 2024-2025 Discover Dublin</div>
+                    <div class="col-md-6 text-md-end">socail icons</div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sweetalert2@11.js"></script>
+    </body>
+</html>
