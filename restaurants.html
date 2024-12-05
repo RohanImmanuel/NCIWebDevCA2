@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Discover Dublin</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/fa.min.css" />
+        <link rel="stylesheet" href="css/common.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/bridge.png" alt="Logo" width="30" class="d-inline-block align-text-top" />
+                    DiscoverDublin
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Attractions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Transportation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <video class="min-vh-100 w-100" autoplay preload muted loop playsinline>
+                <source src="videos/food.mp4" type="video/mp4" />
+            </video>
+            <h1 class="display-1">
+                Savor Dublin’s Culinary Delights
+                <small>From traditional Irish fare to world-class dining, Dublin is a food lover’s paradise</small>
+            </h1>
+            <i class="fa-regular fa-circle-down"></i>
+        </header>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h6 class="display-6 my-3"><i class="fa-solid fa-sliders list-icon"></i> Filters</h6>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                                    Cuisines
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <select class="form-control" id="cuisine-filter">
+                                        <option value="all">All Cuisines</option>
+                                        <option value="Irish">Irish</option>
+                                        <option value="Indian">Indian</option>
+                                        <option value="Seafood">Seafood</option>
+                                        <option value="Contemporary">Contemporary</option>
+                                        <option value="Chinese">Chinese</option>
+                                        <option value="Spanish">Spanish</option>
+                                        <option value="Modern Irish">Modern Irish</option>
+                                        <option value="Modern">Modern</option>
+                                        <option value="Modern French">Modern French</option>
+                                        <option value="French">French</option>
+                                        <option value="Steakhouse">Steakhouse</option>
+                                        <option value="Italian">Italian</option>
+                                        <option value="Middle Eastern">Middle Eastern</option>
+                                        <option value="Cafe">Cafe</option>
+                                        <option value="Brunch">Brunch</option>
+                                        <option value="Vegetarian">Vegetarian</option>
+                                        <option value="Burgers">Burgers</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+                                    Raiting
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                   <div class="form-check">
+                                        <input class="form-check-input raiting-filter-cb" name="raiting" type="radio" value="0" id="raiting0" checked />
+                                        <label class="form-check-label" for="raiting0">Clear</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input raiting-filter-cb" name="raiting" type="radio" value="4.9" id="raiting1" />
+                                        <label class="form-check-label" for="raiting1"><i class="text-warning fa-solid fa-star"></i> 4.9+</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input raiting-filter-cb" name="raiting" type="radio" value="4.8" id="raiting2" />
+                                        <label class="form-check-label" for="raiting2"><i class="text-warning fa-solid fa-star"></i> 4.8+</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input raiting-filter-cb" name="raiting" type="radio" value="4.7" id="raiting3" />
+                                        <label class="form-check-label" for="raiting3"><i class="text-warning fa-solid fa-star"></i> 4.7+</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input raiting-filter-cb" name="raiting" type="radio" value="4.6" id="raiting4" />
+                                        <label class="form-check-label" for="raiting4"><i class="text-warning fa-solid fa-star"></i> 4.6+</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input raiting-filter-cb" name="raiting" type="radio" value="4.5" id="raiting5" />
+                                        <label class="form-check-label" for="raiting5"><i class="text-warning fa-solid fa-star"></i> 4.5+</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseThree">
+                                    Price Range
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input pr-filter-cb" name="pr" type="checkbox" value="€€€€" id="pr1" />
+                                        <label class="form-check-label" for="pr1"><span class="badge text-bg-success">€€€€</span></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input pr-filter-cb" name="pr" type="checkbox" value="€€€" id="pr2" />
+                                        <label class="form-check-label" for="pr2"><span class="badge text-bg-success">€€€</span></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input pr-filter-cb" name="pr" type="checkbox" value="€€" id="pr3" />
+                                        <label class="form-check-label" for="pr3"><span class="badge text-bg-success">€€</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <h6 class="display-6 my-3"><i class="fa-solid fa-bowl-food list-icon"></i> Restaurants</h6>
+                    <input type="text" class="form-control form-control-lg mb-3" autocomplete="off" id="search-filter" placeholder="Search..." />
+                    <div class="row" id="list-view"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="window" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-thumbnail" src="img/restaurants/restaurantsCommon.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h2 id="window-name" class="dispay-2">REst Name</h2>
+                        <p id="window-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam totam minima possimus quos cumque, delectus, officia veniam doloremque ipsam odit atque facilis ad illum officiis, eum odio ducimus dicta?</p>
+                        <p class="card-text text-end">
+                            <i class="text-warning fa-solid fa-star"></i> <span id="window-rating"></span>
+                            <span class="badge text-bg-warning float-start" id="window-cuisine"></span>
+                            <span class="badge text-bg-success float-start ms-1" id="window-priceRange"></span>
+                        </p>
+                        <p><i class="fa-solid fa-location-dot"></i> <span id="window-address"></span></p>
+                        <p><i class="fa-solid fa-square-phone"></i> <span id="window-phone"></span></p>
+                        <p><i class="fa-solid fa-globe"></i> <a id="window-link" target="_blank" href="https://sole.ie">https://sole.ie</a></p>
+                    </div>
+                </div>
+                <div class="row" id="window-close">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-danger btn-lg my-5">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            &nbsp;Close&nbsp;
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="shadow bg-dark text-bg-dark mt-auto">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-2">
+                        <img src="img/bridge.png" alt="" class="footer-icon" />
+                        <h5 class="dispaly-5">Brand Name</h5>
+                    </div>
+                    <div class="col-md-3 ft-menu">
+                        <h5 class="dispaly-5">Menu</h5>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Lorem.</a>
+                        </p>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Facere!</a>
+                        </p>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Maiores.</a>
+                        </p>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Omnis!</a>
+                        </p>
+                        <p class="m-0 border-bottom border-secondary">
+                            <a href="#" class="text-decoration-none text-secondary d-block pt-3">Esse?</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/earth-globe.png" class="d-block footer-icon m-auto my-5" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="dispaly-5">Stay up to date</h5>
+                        <div class="input-group input-group-lg my-3">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="your@email.com"
+                                id="subscribe-input-2" />
+                            <button
+                                class="subscribe-btn btn btn-warning"
+                                data-subscribe-btn-for="subscribe-input-2"
+                                type="button">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center py-3 sub-footer">
+                    <div class="col-md-6 text-md-start">&copy; 2024-2025 Discover Dublin</div>
+                    <div class="col-md-6 text-md-end">socail icons</div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sweetalert2@11.js"></script>
+        <script src="data/restaurantsData.js"></script>
+        <script src="js/restaurants.js"></script>
+    </body>
+</html>
