@@ -1,15 +1,19 @@
-/* attractions.html */
-
 /* Video Banner Styling */
 .video-banner {
     position: relative;
     height: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 .video-banner video {
     object-fit: cover;
     height: 100%;
+    width: 100%;
+}
+
+video {
+    opacity: 0.7;
 }
 
 .video-banner .video-text {
@@ -18,33 +22,450 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-    z-index: 5; /* Ensures the text appears above the video */
-
+    z-index: 5;
 }
 
-/* Card Styling */
-.card img {
-    height: 200px;
+/* General Category Section */
+.categories-section {
+    background-color: #f9f9f9;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+}
+
+.categories-section h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.categories-section .category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+/* Individual Category Card */
+.category-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-card img {
+    width: 100%;
+    height: 180px;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.card-title {
+.category-card h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
     color: #1d3557;
+    padding: 15px;
+    background-color: #ff7f50;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 2px solid #ff7f50;
 }
 
-.card-text {
-    color: #457b9d;
+.category-card p {
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #6c757d;
+    text-align: center;
 }
 
-.btn-primary {
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Hover Effects on Category Titles */
+.category-card:hover h4 {
+    background-color: #ff6347;
+}
+
+/* Featured Image Hover Effect */
+.category-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Plan Your Visit Section */
+.plan-visit a {
+    text-decoration: none;
+}
+
+/* Common Section Styling */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #ff7f50;
+    animation: expandLine 1.2s ease-out;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+    line-height: 1.6;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+/* Plan Your Visit Section */
+.plan-visit ul {
+    padding-left: 20px;
+}
+
+.plan-visit ul li {
+    margin-bottom: 8px;
+}
+
+.plan-visit .btn {
     background-color: #1d3557;
+    color: white;
     border: none;
 }
 
-.btn-primary:hover {
+.plan-visit .btn:hover {
     background-color: #457b9d;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
     color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Home Attractions Section */
+.home-attractions {
+    position: relative;
+    color: white;  /* Text color matching the home page */
+    background-image: url(../img/attractions/attraction-bg.png);  /* Background image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px; /* Added more padding for a balanced layout */
+    text-align: center; /* Centered text for better visual appeal */
+}
+
+.home-attractions h2 {
+    font-size: 2.8rem; /* Increased font size for prominence */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow for better readability */
+}
+
+.home-attractions p {
+    font-size: 1.2rem; /* Slight increase in font size */
+    margin-bottom: 40px; /* Increased space before the cards */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Text shadow for better contrast */
+    z-index: 2; /* Ensure text is on top */
+}
+
+/* Attraction Card Styling */
+.attraction-card {
+    background: rgba(0, 0, 0, 0.6); /* Darker background for better contrast */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid #169B62; /* Green from the Ireland flag */
+    border-right: 6px solid #FF883E; /* Orange from the Ireland flag */
+    height: 400px;  /* Fixed height for consistent card size */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content evenly */
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 180px; /* Consistent image height */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+.attraction-card h3 {
+    font-size: 1.6rem; /* Slightly larger font size */
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Adds emphasis */
+    letter-spacing: 1px; /* Slight spacing for readability */
+    color: #fff; /* White text for visibility */
+}
+
+.attraction-card p {
+    font-size: 1rem;
+    color: #ddd; /* Lighter text for description */
+    margin-bottom: 15px;
+}
+
+.attraction-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Added scale effect for a lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+}
+
+/* Categories Section */
+.categories-section {
+    background-color: #f9f9f9;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+}
+
+.categories-section h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+/* Orange line below Categories of Attraction */
+.categories-section h3::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #FF883E; /* Orange from the Ireland flag */
+}
+
+.categories-section .category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+/* Individual Category Card */
+.category-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category-card h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1d3557;
+    padding: 15px;
+    background-color: #ff7f50;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 2px solid #ff7f50;
+}
+
+.category-card p {
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Hover Effects on Category Titles */
+.category-card:hover h4 {
+    background-color: #ff6347;
+}
+
+/* Featured Image Hover Effect */
+.category-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Plan Your Visit Section */
+.plan-visit a {
+    text-decoration: none;
+}
+
+/* Common Section Styling */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #ff7f50;
+    animation: expandLine 1.2s ease-out;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+    line-height: 1.6;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+/* Plan Your Visit Section */
+.plan-visit ul {
+    padding-left: 20px;
+}
+
+.plan-visit ul li {
+    margin-bottom: 8px;
+}
+
+.plan-visit .btn {
+    background-color: #1d3557;
+    color: white;
+    border: none;
+}
+
+.plan-visit .btn:hover {
+    background-color: #457b9d;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.hover-effect {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+    height: 50px; /* Ensures all buttons have the same height */
+    font-size: 16px; /* Font size adjustment */
+}
+
+.hover-effect span {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.1);
+}
+
+.hover-effect:hover span {
+    transform: translateX(5px);
+}
+
+/* Custom Button Styles */
+.custom-btn {
+    background-color: #28a745; /* Irish Green */
+    color: #fff; /* White text */
+    border: 2px solid #28a745; /* Green border */
+}
+
+.custom-btn:hover {
+    background-color: #ff8c00; /* Irish Orange */
+    border-color: #ff8c00; /* Orange border on hover */
+    color: #fff; /* Ensure text stays visible */
+}
+
+.custom-btn:focus {
+    outline: none; /* Remove the focus outline */
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.5); /* Focus shadow effect */
+}
+
+/* Responsive Button Styling */
+.row-cols-1 .col {
+    flex: 1 1 100%;
+}
+
+.row-cols-md-2 .col {
+    flex: 1 1 48%;
+}
+
+.row-cols-lg-3 .col {
+    flex: 1 1 31%;
+}
+
+.attraction-title {
+    font-size: 6em;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler;
+    background: linear-gradient(
+        to right,
+        #169B62 20%,
+        #FF893F 80%
+    );
+    background: linear-gradient(90deg, #00ae00 33.3%, white 33.3%, white 66.6%, orange 66.6%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 50% auto;
+    animation: textShine 8s linear infinite;
 }
