@@ -4,6 +4,7 @@
     height: 100%;
     overflow: hidden;
     background-color: black;
+    display: flex;
 }
 
 .video-banner video {
@@ -143,6 +144,9 @@ video {
     color: #6c757d;
     line-height: 1.6;
     animation: fadeInUp 1.2s ease-out;
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
 
 /* Plan Your Visit Section */
@@ -180,8 +184,10 @@ footer {
     background-image: url(../img/attractions/attraction-bg.png);  /* Background image */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;  /* Parallax effect */
     padding: 60px 20px; /* Added more padding for a balanced layout */
     text-align: center; /* Centered text for better visual appeal */
+    z-index: 1; /* Ensure the section content is above the background */
 }
 
 .home-attractions h2 {
@@ -240,6 +246,7 @@ footer {
     transform: translateY(-10px) scale(1.05); /* Added scale effect for a lift effect */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
 }
+
 
 /* Categories Section */
 .categories-section {
@@ -468,4 +475,9 @@ footer {
     text-fill-color: transparent;
     background-size: 50% auto;
     animation: textShine 8s linear infinite;
+}
+
+.explore-dublin {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
