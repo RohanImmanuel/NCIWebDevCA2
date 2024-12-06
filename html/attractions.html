@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/anukrati.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/8c12eb1f03.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -19,14 +22,8 @@
                 <img src="/img/bridge.png" alt="Logo" width="30" class="d-inline-block align-text-top">
                 DiscoverDublin
             </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -58,213 +55,177 @@
         </div>
     </div>
 
-   <!-- Introduction Section -->
-<div class="container my-5 section-intro text-center explore-dublin">
-    <h2 class="section-title">Explore the Heart of Dublin</h2>
-    <p class="section-description">
-        Immerse yourself in Dublin's vibrant culture and rich history. Begin your journey at the iconic 
-        <strong>Trinity College Library</strong>, home to the ancient Book of Kells, then wander through 
-        the cobblestone streets of Temple Bar, where live music fills the air. For a touch of tranquility, 
-        stroll along the <em>Grand Canal</em> or explore the lush Phoenix Park, one of the largest urban 
-        parks in Europe.
-    </p>
-    <p class="section-description">
-        No trip to Dublin is complete without sampling its world-famous pubs, where you can enjoy a pint of 
-        Guinness alongside friendly locals. Discover Dublin’s art scene at the <em>National Gallery</em>, 
-        or dive into history at the <strong>EPIC Museum</strong>, celebrating Irish emigration stories.
-    </p>
-    <p class="section-description">
-        Whether you're a history buff, foodie, or nature lover, Dublin has something magical waiting 
-        for you around every corner.
-    </p>
-</div>
+    <!-- Introduction Section -->
+    <div class="container my-5 section-intro text-center explore-dublin">
+        <h2 class="section-title">Explore the Heart of Dublin</h2>
+        <p class="section-description">
+            Immerse yourself in Dublin's vibrant culture and rich history. Begin your journey at the iconic
+            <strong>Trinity College Library</strong>, home to the ancient Book of Kells, then wander through
+            the cobblestone streets of Temple Bar, where live music fills the air. For a touch of tranquility,
+            stroll along the <em>Grand Canal</em> or explore the lush Phoenix Park, one of the largest urban
+            parks in Europe.
+        </p>
+        <p class="section-description">
+            No trip to Dublin is complete without sampling its world-famous pubs, where you can enjoy a pint of
+            Guinness alongside friendly locals. Discover Dublin’s art scene at the <em>National Gallery</em>,
+            or dive into history at the <strong>EPIC Museum</strong>, celebrating Irish emigration stories.
+        </p>
+        <p class="section-description">
+            Whether you're a history buff, foodie, or nature lover, Dublin has something magical waiting
+            for you around every corner.
+        </p>
+    </div>
 
 
-<section class="home-attractions">
-    <div class="container text-center py-5">
-        <h2 class="text-light">Categories of Attractions</h2>
-        <p class="lead text-light">Explore some of the best attractions around the city. From historical landmarks to modern marvels, there's something for everyone!</p>
+    <section class="home-attractions">
+        <div class="container text-center py-5">
+            <h2 class="text-light">Categories of Attractions</h2>
+            <p class="lead text-light">Explore some of the best attractions around the city. From historical landmarks
+                to modern marvels, there's something for everyone!</p>
 
-        <!-- Bootstrap Carousel -->
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Historical -->
-                <div class="carousel-item active">
-                    <h3 class="text-light text-center">Historical</h3>
-                    <div class="row justify-content-center">
-                        <!-- Attraction 1 -->
-                        <div class="col-md-5">
-                            <div class="attraction-card">
-                                <img src="/img/attractions/attraction1.jpg" alt="Trinity College Library" class="img-fluid">
-                                <h3 class="text-light">Trinity College Library</h3>
-                                <p class="text-light">Home to the Book of Kells, a must-visit historical gem.</p>
+            <!-- Bootstrap Carousel -->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Historical -->
+                    <div class="carousel-item active">
+                        <h3 class="text-light text-center">Historical</h3>
+                        <div class="row justify-content-center">
+                            <!-- Attraction 1 -->
+                            <div class="col-md-5">
+                                <div class="attraction-card">
+                                    <img src="/img/attractions/attraction1.jpg" alt="Trinity College Library"
+                                        class="img-fluid">
+                                    <h3 class="text-light">Trinity College Library</h3>
+                                    <p class="text-light">Home to the Book of Kells, a must-visit historical gem.</p>
+                                </div>
+                            </div>
+                            <!-- Attraction 2 -->
+                            <div class="col-md-5">
+                                <div class="attraction-card">
+                                    <img src="/img/attractions/attraction1.jpg" alt="Kilmainham Gaol" class="img-fluid">
+                                    <h3 class="text-light">Kilmainham Gaol</h3>
+                                    <p class="text-light">Discover Ireland's revolutionary past at this historic jail.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <!-- Attraction 2 -->
-                        <div class="col-md-5">
-                            <div class="attraction-card">
-                                <img src="/img/attractions/attraction1.jpg" alt="Kilmainham Gaol" class="img-fluid">
-                                <h3 class="text-light">Kilmainham Gaol</h3>
-                                <p class="text-light">Discover Ireland's revolutionary past at this historic jail.</p>
+                    </div>
+
+                    <!-- Parks -->
+                    <div class="carousel-item">
+                        <h3 class="text-light text-center">Parks</h3>
+                        <div class="row justify-content-center">
+                            <!-- Attraction 1 -->
+                            <div class="col-md-5">
+                                <div class="attraction-card">
+                                    <img src="/img/attractions/attraction1.jpg" alt="Phoenix Park" class="img-fluid">
+                                    <h3 class="text-light">Phoenix Park</h3>
+                                    <p class="text-light">One of Europe's largest city parks, perfect for picnics and
+                                        strolls.</p>
+                                </div>
+                            </div>
+                            <!-- Attraction 2 -->
+                            <div class="col-md-5">
+                                <div class="attraction-card">
+                                    <img src="/img/attractions/attraction1.jpg" alt="St. Stephen's Green"
+                                        class="img-fluid">
+                                    <h3 class="text-light">St. Stephen's Green</h3>
+                                    <p class="text-light">A tranquil escape in the heart of Dublin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modern Landmarks -->
+                    <div class="carousel-item">
+                        <h3 class="text-light text-center">Modern Landmarks</h3>
+                        <div class="row justify-content-center">
+                            <!-- Attraction 1 -->
+                            <div class="col-md-5">
+                                <div class="attraction-card">
+                                    <img src="/img/attractions/attraction1.jpg" alt="Guinness Storehouse"
+                                        class="img-fluid">
+                                    <h3 class="text-light">Guinness Storehouse</h3>
+                                    <p class="text-light">Learn about Ireland's iconic beer and enjoy a pint with a
+                                        view.</p>
+                                </div>
+                            </div>
+                            <!-- Attraction 2 -->
+                            <div class="col-md-5">
+                                <div class="attraction-card">
+                                    <img src="/img/attractions/attraction1.jpg" alt="EPIC Museum" class="img-fluid">
+                                    <h3 class="text-light">EPIC Museum</h3>
+                                    <p class="text-light">Celebrate Irish emigration stories in this award-winning
+                                        museum.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Parks -->
-                <div class="carousel-item">
-                    <h3 class="text-light text-center">Parks</h3>
-                    <div class="row justify-content-center">
-                        <!-- Attraction 1 -->
-                        <div class="col-md-5">
-                            <div class="attraction-card">
-                                <img src="/img/attractions/attraction1.jpg" alt="Phoenix Park" class="img-fluid">
-                                <h3 class="text-light">Phoenix Park</h3>
-                                <p class="text-light">One of Europe's largest city parks, perfect for picnics and strolls.</p>
-                            </div>
-                        </div>
-                        <!-- Attraction 2 -->
-                        <div class="col-md-5">
-                            <div class="attraction-card">
-                                <img src="/img/attractions/attraction1.jpg" alt="St. Stephen's Green" class="img-fluid">
-                                <h3 class="text-light">St. Stephen's Green</h3>
-                                <p class="text-light">A tranquil escape in the heart of Dublin.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modern Landmarks -->
-                <div class="carousel-item">
-                    <h3 class="text-light text-center">Modern Landmarks</h3>
-                    <div class="row justify-content-center">
-                        <!-- Attraction 1 -->
-                        <div class="col-md-5">
-                            <div class="attraction-card">
-                                <img src="/img/attractions/attraction1.jpg" alt="Guinness Storehouse" class="img-fluid">
-                                <h3 class="text-light">Guinness Storehouse</h3>
-                                <p class="text-light">Learn about Ireland's iconic beer and enjoy a pint with a view.</p>
-                            </div>
-                        </div>
-                        <!-- Attraction 2 -->
-                        <div class="col-md-5">
-                            <div class="attraction-card">
-                                <img src="/img/attractions/attraction1.jpg" alt="EPIC Museum" class="img-fluid">
-                                <h3 class="text-light">EPIC Museum</h3>
-                                <p class="text-light">Celebrate Irish emigration stories in this award-winning museum.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
-           <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>
-</section>
-<h2 class="section-title top-attractions-h2">Top Attractions</h2>
+    </section>
+    <h2 class="section-title top-attractions-h2">Top Attractions</h2>
 
-<section class="attraction-carousel-section">
+    <section class="attraction-carousel-section">
 
-    <input type="radio" name="position" value="1" />
-    <input type="radio" name="position" value="2" />
-    <input type="radio" name="position" checked value="3" />
-    <input type="radio" name="position" value="4" />
-    <input type="radio" name="position" value="5" />
+        <input type="radio" name="position" value="1" />
+        <input type="radio" name="position" value="2" />
+        <input type="radio" name="position" checked value="3" />
+        <input type="radio" name="position" value="4" />
+        <input type="radio" name="position" value="5" />
 
-    <div class="attraction-carousel">
-        <!-- Trinity College Library -->
-        <div class="carousel-element">
-            <img src="/img/attractions/attraction1.jpg" alt="Trinity College Library">
-            <h4 class="name">Trinity College Library</h4>
-            <p class="testimonial">A treasure trove of knowledge and history.</p>
+        <div class="attraction-carousel">
+            <!-- Trinity College Library -->
+            <div class="carousel-element">
+                <img src="/img/attractions/attraction1.jpg" alt="Trinity College Library">
+                <h4 class="name">Trinity College Library</h4>
+                <p class="testimonial">A treasure trove of knowledge and history.</p>
+            </div>
+            <!-- Guinness Storehouse -->
+            <div class="carousel-element">
+                <img src="/img/attractions/attraction1.jpg" alt="Guinness Storehouse">
+                <h4 class="name">Guinness Storehouse</h4>
+                <p class="testimonial">Experience the story of Ireland's famous brew.</p>
+            </div>
+            <!-- Phoenix Park -->
+            <div class="carousel-element">
+                <img src="/img/attractions/attraction1.jpg" alt="Phoenix Park">
+                <h4 class="name">Phoenix Park</h4>
+                <p class="testimonial">Relax and explore vast green landscapes.</p>
+            </div>
+            <!-- Kilmainham Gaol -->
+            <div class="carousel-element">
+                <img src="/img/attractions/attraction1.jpg" alt="Kilmainham Gaol">
+                <h4 class="name">Kilmainham Gaol</h4>
+                <p class="testimonial">A somber reminder of Ireland's history.</p>
+            </div>
+            <!-- St. Stephen's Green -->
+            <div class="carousel-element">
+                <img src="/img/attractions/attraction1.jpg" alt="St. Stephen's Green">
+                <h4 class="name">St. Stephen's Green</h4>
+                <p class="testimonial">An oasis of calm in the bustling city.</p>
+            </div>
         </div>
-        <!-- Guinness Storehouse -->
-        <div class="carousel-element">
-            <img src="/img/attractions/attraction1.jpg" alt="Guinness Storehouse">
-            <h4 class="name">Guinness Storehouse</h4>
-            <p class="testimonial">Experience the story of Ireland's famous brew.</p>
-        </div>
-        <!-- Phoenix Park -->
-        <div class="carousel-element">
-            <img src="/img/attractions/attraction1.jpg" alt="Phoenix Park">
-            <h4 class="name">Phoenix Park</h4>
-            <p class="testimonial">Relax and explore vast green landscapes.</p>
-        </div>
-        <!-- Kilmainham Gaol -->
-        <div class="carousel-element">
-            <img src="/img/attractions/attraction1.jpg" alt="Kilmainham Gaol">
-            <h4 class="name">Kilmainham Gaol</h4>
-            <p class="testimonial">A somber reminder of Ireland's history.</p>
-        </div>
-        <!-- St. Stephen's Green -->
-        <div class="carousel-element">
-            <img src="/img/attractions/attraction1.jpg" alt="St. Stephen's Green">
-            <h4 class="name">St. Stephen's Green</h4>
-            <p class="testimonial">An oasis of calm in the bustling city.</p>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
+    </section>
 
     <!-- Interactive Map Section -->
     <div class="container my-5">
-        <h3>Interactive Map</h3>
-        <p>Click on the markers below to explore each attraction:</p>
+        <p>Click on the markers below to explore each attraction <i class="fa-solid fa-location-dot"></i></p>
         <div id="map" style="height: 400px;"></div>
     </div>
-
-  <!-- Plan Your Visit Section -->
-<div class="container my-5">
-    <h3>Plan Your Visit</h3>
-    <p>Visit the official websites for tickets and details:</p>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-4">
-        <!-- Button 1 -->
-        <div class="col">
-            <a href="https://dublincastle.ie" class="btn custom-btn rounded-pill hover-effect w-100" role="button">
-                Dublin Castle <span>&#8594;</span>
-            </a>
-        </div>
-        <!-- Button 2 -->
-        <div class="col">
-            <a href="https://kilmainhamgaolmuseum.ie" class="btn custom-btn rounded-pill hover-effect w-100" role="button">
-                Kilmainham Gaol <span>&#8594;</span>
-            </a>
-        </div>
-        <!-- Button 3 -->
-        <div class="col">
-            <a href="/downloads/dublin-itinerary.pdf" class="btn custom-btn rounded-pill hover-effect w-100" role="button">
-                Download Itinerary <span>&#8594;</span>
-            </a>
-        </div>
-        <!-- Button 4 (New) -->
-        <div class="col">
-            <a href="https://example.com" class="btn custom-btn rounded-pill hover-effect w-100" role="button">
-                Example Link <span>&#8594;</span>
-            </a>
-        </div>
-        <!-- Button 5 (New) -->
-        <div class="col">
-            <a href="https://example.com" class="btn custom-btn rounded-pill hover-effect w-100" role="button">
-                More Info <span>&#8594;</span>
-            </a>
-        </div>
-    </div>
-</div>
 
 
     <!-- Footer -->
@@ -286,20 +247,52 @@
     
         // Add markers for attractions
         const attractions = [
-            { name: "Dublin Castle", coords: [53.3437935, -6.2674693], url: "https://dublincastle.ie" },
-            { name: "Phoenix Park", coords: [53.356937, -6.329998] },
-            { name: "Guinness Storehouse", coords: [53.341864, -6.28686], url: "https://www.guinness-storehouse.com" },
-            { name: "St. Stephen's Green", coords: [53.338190, -6.259262] }
+            { 
+                name: "Dublin Castle", 
+                coords: [53.3437935, -6.2674693], 
+                url: "https://dublincastle.ie",
+                image: "/img/attractions/attraction1.jpg" // Add the image URL or path here
+            },
+            { 
+                name: "Phoenix Park", 
+                coords: [53.356937, -6.329998], 
+                url: "https://www.phoenixpark.ie", // Updated URL for Phoenix Park
+                image: "/img/attractions/attraction1.jpg" // Updated image URL
+            },
+            { 
+                name: "Guinness Storehouse", 
+                coords: [53.341864, -6.28686], 
+                url: "https://www.guinness-storehouse.com",
+                image: "/img/attractions/attraction1.jpg" // Updated image URL
+            },
+            { 
+                name: "St. Stephen's Green", 
+                coords: [53.338190, -6.259262], 
+                image: "/img/attractions/attraction1.jpg" // Updated image URL
+            },
+            { 
+                name: "Trinity College Library", 
+                coords: [53.343, -6.254],
+                image: "/img/attractions/attraction1.jpg" // Updated image URL
+            },
+            { 
+                name: "Kilmainham Gaol", 
+                coords: [53.345, -6.297], 
+                image: "/img/attractions/attraction1.jpg" // Updated image URL
+            }
         ];
     
+        // Loop through each attraction and add a marker with a popup
         attractions.forEach(attraction => {
             const marker = L.marker(attraction.coords).addTo(map)
                 .bindPopup(
                     `<strong>${attraction.name}</strong><br>` +
-                    (attraction.url ? `<a href="${attraction.url}" target="_blank">Visit Website</a>` : '')
+                    (attraction.url ? `<a href="${attraction.url}" target="_blank">Visit Website</a><br>` : '') +
+                    (attraction.image ? `<img src="${attraction.image}" alt="${attraction.name}" style="width:100%; max-height:200px; object-fit:cover; margin-top: 5px;">` : '')
                 );
         });
     </script>
     
 </body>
+
 </html>
