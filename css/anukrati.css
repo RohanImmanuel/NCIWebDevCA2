@@ -209,6 +209,8 @@ footer {
     background: rgba(0, 0, 0, 0.6); /* Darker background for better contrast */
     padding: 20px;
     margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
     border-radius: 12px; /* Rounded corners for a modern look */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 6px solid #169B62; /* Green from the Ireland flag */
@@ -506,6 +508,7 @@ footer {
 .attraction-carousel-section {
     display: grid;
     gap: 20px;
+    
 }
 .attraction-carousel {
     grid-row: 1 / 2;
@@ -612,4 +615,8 @@ input:nth-of-type(5):checked ~ .attraction-carousel {
     font-family: 'Arial', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+}
+
+.carousel-item h3 {
+    margin-bottom: 20px;
 }
