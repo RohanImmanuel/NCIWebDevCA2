@@ -84,78 +84,134 @@
         <h2 class="text-light">Top Attractions</h2>
         <p class="lead text-light">Explore some of the best attractions around the city. From historical landmarks to modern marvels, there's something for everyone!</p>
 
-        <div class="row">
-            <!-- Attraction 1 -->
-            <div class="col-md-4">
-                <div class="attraction-card">
-                    <img src="/img/attractions/attraction1.jpg" alt="Attraction 1" class="img-fluid">
-                    <h3 class="text-light">Attraction 1: The Grand Museum</h3>
-                    <p class="text-light">A journey through the city's history, featuring artifacts and exhibits from centuries past. The museum offers interactive displays and guided tours.</p>
+        <!-- Bootstrap Carousel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <!-- Attraction 1 -->
+                        <div class="col-md-5">
+                            <div class="attraction-card">
+                                <img src="/img/attractions/attraction1.jpg" alt="Attraction 1" class="img-fluid">
+                                <h3 class="text-light">Attraction 1: The Grand Museum</h3>
+                                <p class="text-light">A journey through the city's history, featuring artifacts and exhibits from centuries past.</p>
+                            </div>
+                        </div>
+                        <!-- Attraction 2 -->
+                        <div class="col-md-5">
+                            <div class="attraction-card">
+                                <img src="/img/attractions/attraction1.jpg" alt="Attraction 2" class="img-fluid">
+                                <h3 class="text-light">Attraction 2: The Great Park</h3>
+                                <p class="text-light">Perfect for nature lovers, this sprawling park offers walking trails and picnic areas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <!-- Attraction 3 -->
+                        <div class="col-md-5">
+                            <div class="attraction-card">
+                                <img src="/img/attractions/attraction1.jpg" alt="Attraction 3" class="img-fluid">
+                                <h3 class="text-light">Attraction 3: Sky Tower</h3>
+                                <p class="text-light">The tallest building in the city, offering breathtaking cityscape views.</p>
+                            </div>
+                        </div>
+                        <!-- Attraction 1 -->
+                        <div class="col-md-5">
+                            <div class="attraction-card">
+                                <img src="/img/attractions/attraction1.jpg" alt="Attraction 1" class="img-fluid">
+                                <h3 class="text-light">Attraction 1: The Grand Museum</h3>
+                                <p class="text-light">A journey through the city's history, featuring artifacts and exhibits from centuries past.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <!-- Attraction 2 -->
+                        <div class="col-md-5">
+                            <div class="attraction-card">
+                                <img src="/img/attractions/attraction1.jpg" alt="Attraction 2" class="img-fluid">
+                                <h3 class="text-light">Attraction 2: The Great Park</h3>
+                                <p class="text-light">Perfect for nature lovers, this sprawling park offers walking trails and picnic areas.</p>
+                            </div>
+                        </div>
+                        <!-- Attraction 3 -->
+                        <div class="col-md-5">
+                            <div class="attraction-card">
+                                <img src="/img/attractions/attraction1.jpg" alt="Attraction 3" class="img-fluid">
+                                <h3 class="text-light">Attraction 3: Sky Tower</h3>
+                                <p class="text-light">The tallest building in the city, offering breathtaking cityscape views.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Attraction 2 -->
-            <div class="col-md-4">
-                <div class="attraction-card">
-                    <img src="/img/attractions/attraction1.jpg" alt="Attraction 2" class="img-fluid">
-                    <h3 class="text-light">Attraction 2: The Great Park</h3>
-                    <p class="text-light">Perfect for nature lovers, this sprawling park offers walking trails, boating lakes, and picnic areas. It's a peaceful retreat in the heart of the city.</p>
-                </div>
-            </div>
-
-            <!-- Attraction 3 -->
-            <div class="col-md-4">
-                <div class="attraction-card">
-                    <img src="/img/attractions/attraction1.jpg" alt="Attraction 3" class="img-fluid">
-                    <h3 class="text-light">Attraction 3: Sky Tower</h3>
-                    <p class="text-light">The tallest building in the city, offering panoramic views from its observation deck. A must-see for those who love breathtaking cityscapes.</p>
-                </div>
-            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </section>
 
 
-<!-- Categories Section -->
-<div class="container categories-section my-5">
+
+
+<section class="attraction-carousel-section">
     <h3>Categories of Attractions</h3>
-    <div class="category-container">
-        <!-- Historical Category -->
-        <div class="category-card">
-            <img src="/img/attractions/attraction1.jpg" alt="Dublin Castle">
-            <h4>Historical</h4>
-            <p><strong>Dublin Castle:</strong> A symbol of Irish history dating back to the 13th century.</p>
-            <p><strong>Kilmainham Gaol:</strong> Explore the story of Irish independence at this historic prison.</p>
+
+    <input type="radio" name="position" value="1" />
+    <input type="radio" name="position" value="2" />
+    <input type="radio" name="position" checked value="3" />
+    <input type="radio" name="position" value="4" />
+    <input type="radio" name="position" value="5" />
+
+    <div class="attraction-carousel">
+        <!-- Trinity College Library -->
+        <div class="carousel-element">
+            <img src="/img/attractions/attraction1.jpg" alt="Trinity College Library">
+            <h4 class="name">Trinity College Library</h4>
+            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
-        <!-- Cultural Category -->
-        <div class="category-card">
+        <!-- Guinness Storehouse -->
+        <div class="carousel-element">
             <img src="/img/attractions/attraction1.jpg" alt="Guinness Storehouse">
-            <h4>Cultural</h4>
-            <p><strong>Guinness Storehouse:</strong> Learn the history of Ireland’s most famous beer.</p>
-            <p><strong>Irish Museum of Modern Art:</strong> Experience contemporary art in a stunning historic setting.</p>
+            <h4 class="name">Guinness Storehouse</h4>
+            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
-        <!-- Outdoor Category -->
-        <div class="category-card">
+        <!-- Phoenix Park -->
+        <div class="carousel-element">
             <img src="/img/attractions/attraction1.jpg" alt="Phoenix Park">
-            <h4>Outdoor</h4>
-            <p><strong>Phoenix Park:</strong> One of Europe’s largest urban parks.</p>
-            <p><strong>St. Stephen’s Green:</strong> A peaceful oasis in the heart of the city.</p>
+            <h4 class="name">Phoenix Park</h4>
+            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
-        <!-- Additional Categories -->
-        <div class="category-card">
-            <img src="/img/attractions/attraction1.jpg" alt="Irish Park">
-            <h4>Parks</h4>
-            <p><strong>Botanic Gardens:</strong> Explore Ireland’s beautiful botanical species.</p>
-            <p><strong>St. Anne’s Park:</strong> A peaceful escape with lush landscapes.</p>
+        <!-- Kilmainham Gaol -->
+        <div class="carousel-element">
+            <img src="/img/attractions/attraction1.jpg" alt="Kilmainham Gaol">
+            <h4 class="name">Kilmainham Gaol</h4>
+            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
-        <div class="category-card">
-            <img src="/img/attractions/attraction1.jpg" alt="Dublin Zoo">
-            <h4>Zoo & Nature</h4>
-            <p><strong>Dublin Zoo:</strong> Visit one of the world’s oldest zoos.</p>
-            <p><strong>National Botanic Gardens:</strong> Discover Ireland’s plant life.</p>
+        <!-- St. Stephen's Green -->
+        <div class="carousel-element">
+            <img src="/img/attractions/attraction1.jpg" alt="St. Stephen's Green">
+            <h4 class="name">St. Stephen's Green</h4>
+            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
     </div>
-</div>
+</section>
 
 
 
