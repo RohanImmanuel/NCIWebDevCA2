@@ -58,25 +58,10 @@
             <i class="fa-regular fa-circle-down"></i>
         </header>
 
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="display-1 public-transpoart-title shadow rounded-top">
-                        <i class="fa-solid fa-train-subway"></i> Public Transport
-                    </h1>
-                    <iframe
-                        id="public-transport-map"
-                        class="shadow rounded-bottom"
-                        title="public-transport-map"
-                        src="https://journeyplanner-production.transportforireland.ie/departures?wrapper=false&"></iframe>
-                </div>
-            </div>
-        </div>
-
         <div class="container py-5 home-ft">
             <div class="row">
                 <div class="col-lg-6 home-ft-image transport-dbbikes shadow"></div>
-                <div class="col-lg-6 my-auto p-5">
+                <div class="col-lg-6 my-auto p-5 py-lg-0">
                     <h2 class="display-2 pt-5"><i class="fa-solid fa-person-biking"></i> Dublin Bikes</h2>
                     <p>Dublin Bikes is an eco-friendly, convenient, and affordable way to explore the city.</p>
                     <dl class="row">
@@ -93,9 +78,9 @@
                         </dd>
                     </dl>
                     <p>
-                        <a class="btn btn-lg btn-info" target="_blank" href="#" role="button"><i class="fa-solid fa-globe me-1"></i> Dublin Bikes</a>
-                        <a class="btn btn-lg btn-success" target="_blank" href="#" role="button"><i class="fa-brands fa-google-play me-1"></i>Play Store</a>
-                        <a class="btn btn-lg btn-dark" target="_blank" href="#" role="button"><i class="fa-brands fa-app-store-ios me-1"></i> App Store</a>
+                        <a class="btn btn-lg btn-info btn-db-web" target="_blank" href="#" role="button"><i class="fa-solid fa-globe me-1"></i> Dublin Bikes</a>
+                        <a class="btn btn-lg btn-success btn-db-google" target="_blank" href="#" role="button"><i class="fa-brands fa-google-play me-1"></i> Play Store</a>
+                        <a class="btn btn-lg btn-dark btn-db-web-apple" target="_blank" href="#" role="button"><i class="fa-brands fa-app-store-ios me-1"></i> App Store</a>
                     </p>
                 </div>
             </div>
@@ -105,11 +90,11 @@
                     <h2 class="display-2"><i class="fa-solid fa-taxi"></i> Taxis</h2>
                     <p>Taxis are widely available in Dublin, with several app-based services for convenience. Average Fares of ity Centre <i class="fa-solid fa-arrow-right-arrow-left"></i> Airport: ~€25–€30</p>
                     <p>
-                        <a href="https://www.free-now.com/ie/" class="btn btn-lg btn-primary mb-3" target="_blank"><i class="fas fa-taxi"></i> FREENOW</a>
-                        <a href="https://www.lynk.ie/" class="btn btn-lg btn-secondary mb-3" target="_blank"><i class="fas fa-taxi"></i> Lynk Taxis</a>
-                        <a href="https://www.uber.com/ie/en/" class="btn btn-lg btn-info mb-3" target="_blank"><i class="fas fa-taxi"></i> Uber Ireland</a>
-                        <a href="https://viptaxis.ie/" class="btn btn-lg btn-success mb-3" target="_blank"><i class="fas fa-taxi"></i> VIP Taxis</a>
-                        <a href="https://www.boundlessroads.com/taxi-apps-in-ireland/" class="btn btn-lg btn-warning mb-3" target="_blank"><i class="fas fa-taxi"></i> Cab2000</a>
+                        <a href="https://www.free-now.com/ie/" class="btn btn-lg btn-primary btn-freenow mb-3" target="_blank"><i class="fas fa-taxi"></i> FREENOW</a>
+                        <a href="https://www.lynk.ie/" class="btn btn-lg btn-secondary btn-lynk mb-3" target="_blank"><i class="fas fa-taxi"></i> Lynk</a>
+                        <a href="https://www.uber.com/ie/en/" class="btn btn-lg btn-info btn-uber mb-3" target="_blank"><i class="fas fa-taxi"></i> Uber</a>
+                        <a href="https://viptaxis.ie/" class="btn btn-lg btn-success btn-vip mb-3" target="_blank"><i class="fas fa-taxi"></i> VIP</a>
+                        <a href="https://www.boundlessroads.com/taxi-apps-in-ireland/" class="btn btn-lg btn-warning btn-cab200 mb-3" target="_blank"><i class="fas fa-taxi"></i> Cab2000</a>
                     </p>
                 </div>
             </div>
@@ -126,12 +111,27 @@
                         </dd>
                     </dl>
                     <p>
-                        <a href="https://www.enterprise.com/en/car-rental-locations/ie/dublin.html" class="btn btn-lg btn-primary mb-3" target="_blank"><i class="fas fa-car"></i> Enterprise</a>
-                        <a href="https://www.budget.ie/dublinairport.htm" class="btn btn-lg btn-secondary mb-3" target="_blank"><i class="fas fa-car"></i> Budget</a>
-                        <a href="https://www.irishcarrentals.com/location/car-rental-dublin-airport" class="btn btn-lg btn-info mb-3" target="_blank"><i class="fas fa-car"></i> Irish Car Rentals</a>
-                        <a href="https://www.sixt.com/car-rental/ireland/dublin/" class="btn btn-lg btn-success mb-3" target="_blank"><i class="fas fa-car"></i> SIXT</a>
-                        <a href="https://www.hertz.ie/p/car-hire/ireland/dublin" class="btn btn-lg btn-warning mb-3" target="_blank"><i class="fas fa-car"></i> Hertz</a>
+                        <a href="https://www.enterprise.com/en/car-rental-locations/ie/dublin.html" class="btn btn-lg btn-primary btn-enterprise mb-3" target="_blank"><i class="fas fa-car"></i> Enterprise</a>
+                        <a href="https://www.budget.ie/dublinairport.htm" class="btn btn-lg btn-secondary btn-budget mb-3" target="_blank"><i class="fas fa-car"></i> Budget</a>
+                        <a href="https://www.irishcarrentals.com/location/car-rental-dublin-airport" class="btn btn-lg btn-icr btn-info mb-3" target="_blank"><i class="fas fa-car"></i> Irish Car Rentals</a>
+                        <a href="https://www.sixt.com/car-rental/ireland/dublin/" class="btn btn-lg btn-success btn-sixt mb-3" target="_blank"><i class="fas fa-car"></i> SIXT</a>
+                        <a href="https://www.hertz.ie/p/car-hire/ireland/dublin" class="btn btn-lg btn-warning btn-hertz mb-3" target="_blank"><i class="fas fa-car"></i> Hertz</a>
                     </p>
+                </div>
+            </div>
+            
+            <div class="row my-5">
+                <div class="col-12">
+                    <h1 class="display-1 public-transpoart-title shadow rounded-top">
+                        <i class="fa-solid fa-train-subway"></i> Public Transport
+                    </h1>
+                    <!--
+                    <iframe
+                        id="public-transport-map"
+                        class="shadow rounded-bottom"
+                        title="public-transport-map"
+                        src="https://journeyplanner-production.transportforireland.ie/departures?wrapper=false&"></iframe>
+                        -->
                 </div>
             </div>
         </div>
