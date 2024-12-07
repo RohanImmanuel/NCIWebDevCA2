@@ -13,10 +13,6 @@
     filter: invert(100%);
 }
 
-footer{
-    border-top: 10px solid #000;
-}
-
 footer .ft-menu p{
     border-bottom-style: dotted;
 }
