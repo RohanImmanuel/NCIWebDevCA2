@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Dublin | Contact</title>
+
+    <!-- Bootstrap CSS -->
+    
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/anukrati.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/8c12eb1f03.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/bridge.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                DiscoverDublin
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attractions.html">Attractions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transportation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="form-section">
+        <div class="glass-container">
+            <!-- <section class="contact-us"> -->
+                <div class="contact-form-section">
+                    <h2>Contact Us</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Please enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Please enter your email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Reason for Contact</label>
+                            <select class="form-control" id="reason" required>
+                                <option disabled selected value="">Select a reason...</option>
+                                <option>Notify for a wrong order</option>
+                                <option>Query about a product</option>
+                                <option>General inquiry</option>
+                                <option>Feedback or Suggestions</option>
+                                <option>Bulk Orders</option>
+                                <option>Partnership Opportunities</option>
+                                <option>Technical Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Please type your message here" required></textarea>
+                        </div>
+    
+                        <button type="submit" class="submit-btn">Send my message</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="shadow bg-dark text-bg-dark mt-auto">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-2">
+                    <img src="img/bridge.png" alt="" class="footer-icon" />
+                    <h5 class="dispaly-5">Brand Name</h5>
+                </div>
+                <div class="col-md-3 ft-menu">
+                    <h5 class="dispaly-5">Menu</h5>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Lorem.</a>
+                    </p>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Facere!</a>
+                    </p>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Maiores.</a>
+                    </p>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Omnis!</a>
+                    </p>
+                    <p class="m-0 border-bottom border-secondary">
+                        <a href="#" class="text-decoration-none text-secondary d-block pt-3">Esse?</a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/earth-globe.png" class="d-block footer-icon m-auto my-5" alt="" />
+                </div>
+                <div class="col-md-4">
+                    <h5 class="dispaly-5">Stay up to date</h5>
+                    <div class="input-group input-group-lg my-3">
+                        <input type="text" class="form-control" placeholder="your@email.com" id="subscribe-input-2"/>
+                        <button class="subscribe-btn btn btn-warning" data-subscribe-btn-for="subscribe-input-2" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center py-3 sub-footer">
+                <div class="col-md-6 text-md-start">&copy; 2024-2025 Discover Dublin</div>
+                <div class="col-md-6 text-md-end">socail icons</div>
+            </div>
+        </div>
+    </footer>
+
+   <!-- Form Submission Alerts -->
+   <script>
+    // Handle Contact Form Submission
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Thank you for contacting us!");
+    });
+
+    // Handle Membership Form Submission
+    document.getElementById("membershipForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Thank you for joining us!");
+    });
+</script>
+
+    <!-- JavaScript Libraries -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

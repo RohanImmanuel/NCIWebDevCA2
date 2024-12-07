@@ -1,16 +1,16 @@
 .text-justify{
     text-align: justify;
 }
-
 .navbar-brand img{
     filter: invert(100%);
     margin-right: 0.5em;
 }
 
-
 .footer-icon{
-    margin: 0;
-    /*width: 25%;*/
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    filter: invert(100%);
 }
 
 .subscribe-box{
