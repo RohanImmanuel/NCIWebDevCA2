@@ -378,3 +378,24 @@ textarea.form-control {
     background: orange !important;
     color: white;
 }
+
+/* Transport */
+
+.transport-img-container {
+    display: flex;
+}
+
+.transport-img {
+    width: 100%;          
+    height: 350px;        
+    object-fit: cover;   
+    max-width: 100%;    
+    align-self: center;  
+}
+
+#public-transport-map{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    border: 0;
+}
