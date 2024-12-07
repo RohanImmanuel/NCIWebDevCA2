@@ -284,13 +284,15 @@ input:nth-of-type(5):checked ~ .top-attractions {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: url('/img/contact/contact-bg-2.jpg');
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), 
+        url('/img/contact/contact-bg-3.jpg');
     background-size: cover;
-    opacity: 0.9;
+    background-position: center;
     padding-top: 80px;
     padding-bottom: 80px;
-
 }
+
 
 .glass-container {
     width: 700px;
@@ -363,7 +365,7 @@ textarea.form-control {
 
 .submit-btn {
     background-color: transparent !important;
-    color: black;
+    color: white;
     outline: 1px solid white;
     padding: 10px 15px;
     border-radius: 10px;
