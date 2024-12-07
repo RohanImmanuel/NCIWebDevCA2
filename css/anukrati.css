@@ -278,10 +278,23 @@ input:nth-of-type(5):checked ~ .top-attractions {
 }
 
 /* Contact Us */
+.form-section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('/img/contact/contact-bg-2.jpg');
+    background-size: cover;
+    opacity: 0.9;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
 
 .glass-container {
-    width: 300px;
-    height: 350px;
+    width: 700px;
+    height: 650px;
     position: relative;
     z-index: 1;
     background: rgba(255, 255, 255, 0.1);
@@ -301,86 +314,65 @@ input:nth-of-type(5):checked ~ .top-attractions {
     z-index: -1;
 }
 
-.login-box {
-    max-width: 250px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h2 {
-    color: #fff;
-    margin-top: 30px;
-    margin-bottom: -20px;
-}
-
-form {
+.contact-form-section {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 100%;
 }
 
-input {
+
+.contact-form-section h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
     padding: 10px;
-    margin-top: 25px;
-    border: none;
-    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
     background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 13px;
+    color: white;
 }
 
-input::placeholder {
-    color: #fff;
+textarea.form-control {
+    resize: none;
 }
 
-input:focus {
+.form-control::placeholder {
+    color: white;
+}
+
+.form-control:focus {
     outline: none;
-}
-
-.options {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    font-size: 12px;
-    color: white;
-}
-
-.options input {
-    margin-right: 5px;
-    margin-top: 0px;
-}
-
-.options a {
-    text-decoration: none;
-    color: white;
-    margin-left: auto;
+    border-color: #f0f0f0;
 }
 
 button {
-    background: #fff;
+    background-color: transparent !important;
     color: black;
-    padding: 10px;
-    border: none;
+    outline: 1px solid white;
+    padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 15px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
 }
 
 button:hover {
-    background: transparent;
+    background: orange !important;
     color: white;
-    outline: 1px solid #fff;
-}
-
-p {
-    font-size: 12px;
-    color: #fff;
-    margin-top: 15px;
-}
-
-#register {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
 }
