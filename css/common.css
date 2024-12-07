@@ -28,5 +28,15 @@ footer .ft-menu a:hover{
 }
 footer .sub-footer{
     background-color: black;
-    box-shadow: 999px 0 black, -999px 0 black;
+    box-shadow: 500px 0 black, -500px 0 black;
+}
+
+.social-icons a{ 
+    color: white;
+    display: inline-block;
+    padding: 0 0.2em;
+    text-decoration: none;
+}
+.social-icons a:hover{
+    color: gold;
 }
