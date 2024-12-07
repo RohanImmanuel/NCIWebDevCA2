@@ -251,7 +251,7 @@
                 name: "Dublin Castle", 
                 coords: [53.3437935, -6.2674693], 
                 url: "https://dublincastle.ie",
-                image: "/img/attractions/attraction1.jpg" // Add the image URL or path here
+                image: "/img/attractions/dublin-castle.jpg" // Add the image URL or path here
             },
             { 
                 name: "Phoenix Park", 
@@ -273,12 +273,20 @@
             { 
                 name: "Trinity College Library", 
                 coords: [53.343, -6.254],
+                url: "https://www.tcd.ie/library",
                 image: "/img/attractions/trinity-college-library.webp" // Updated image URL
             },
             { 
                 name: "Kilmainham Gaol", 
                 coords: [53.345, -6.297], 
+                url: "https://www.kilmainhamgaolmuseum.ie/",
                 image: "/img/attractions/kilmainham-gaol.webp" // Updated image URL
+            },
+            { 
+                name: "Epic Museum", 
+                coords: [53.348, -6.248], 
+                url: "https://epicchq.com/",
+                image: "/img/attractions/attraction1.jpg" // Updated image URL
             }
         ];
     
@@ -287,9 +295,10 @@
             const marker = L.marker(attraction.coords).addTo(map)
                 .bindPopup(
                     `<strong>${attraction.name}</strong><br>` +
-                    (attraction.url ? `<a href="${attraction.url}" target="_blank">Visit Website</a><br>` : '') +
-                    (attraction.image ? `<img src="${attraction.image}" alt="${attraction.name}" style="width:100%; max-height:200px; object-fit:cover; margin-top: 5px;">` : '')
-                );
+                    (attraction.image ? `<img src="${attraction.image}" alt="${attraction.name}" style="width:100%; max-height:200px; object-fit:cover; margin-top: 5px; margin-bottom: 5px;">` : '') +
+                    (attraction.url ? `<a href="${attraction.url}" target="_blank">Visit Website</a><br>` : '') 
+
+                    );
         });
     </script>
     
