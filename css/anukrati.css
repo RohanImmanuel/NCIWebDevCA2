@@ -224,7 +224,7 @@ footer {
 
 .attraction-card img {
     width: 100%;
-    height: 380px; /* Consistent image height */
+    height: 280px; /* Consistent image height */
     border-radius: 10px;
     margin-bottom: 15px;
     object-fit: cover;
