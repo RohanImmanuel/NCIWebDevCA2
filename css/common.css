@@ -1,0 +1,36 @@
+.text-justify{
+    text-align: justify;
+}
+
+.navbar-brand img{
+    filter: invert(100%);
+    margin-right: 0.5em;
+}
+
+
+.footer-icon{
+    margin: 0;
+    /*width: 25%;*/
+}
+
+.subscribe-box{
+    background-color: #fff;
+}
+
+footer{
+    border-top: 10px solid #000;
+}
+
+footer .ft-menu p{
+    border-bottom-style: dotted;
+}
+
+footer .ft-menu p:hover,
+footer .ft-menu a:hover{
+    color: #fff !important;
+    border-color: #fff !important;
+}
+footer .sub-footer{
+    background-color: black;
+    box-shadow: 999px 0 black, -999px 0 black;
+}
