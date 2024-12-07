@@ -132,8 +132,6 @@
     }
 }
 
-<<<<<<< HEAD
-
 header{
     height: 95vh;
     position: relative;
@@ -194,8 +192,6 @@ header .fa-circle-down{
   }
 }
 
-=======
->>>>>>> transport
 #list-view .card{
     cursor: pointer;
     transition: all 0.5s linear;
