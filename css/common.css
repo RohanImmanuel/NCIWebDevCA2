@@ -24,10 +24,14 @@ footer .ft-menu p{
     border-bottom-style: dotted;
 }
 
+footer .ft-menu a{
+    color: white !important;
+}
+
 footer .ft-menu p:hover,
 footer .ft-menu a:hover{
-    color: #fff !important;
-    border-color: #fff !important;
+    color: gold !important;
+    border-color: gold !important;
 }
 footer .sub-footer{
     background-color: black;
