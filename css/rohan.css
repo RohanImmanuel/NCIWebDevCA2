@@ -382,7 +382,7 @@ header .fa-circle-down{
 }
 
 .transport-img{
-    filter: drop-shadow(rgba(0,0,0,0.2) 0 0 40px);
+    filter: drop-shadow(rgb(0,0,0) 0 0 40px);
     transform: perspective(750px) rotateY(-30deg) scale(0.9, 0.9);
     transition: 0.4s ease-in-out transform;
 }
