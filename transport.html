@@ -7,9 +7,9 @@
     <title>Discover Dublin</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fa.min.css" />
-    <!-- <link rel="stylesheet" href="css/rohan.css" /> -->
+     <link id="theme" rel="stylesheet" href="css/anukrati.css" />
+     <!--<link rel="stylesheet" href="css/anukrati.css" />--> 
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/anukrati.css" />
 
       <!-- Favicon and App Icons -->
       <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -21,7 +21,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+        <div class="container">
+            <span class="navbar-brand">CSS Style Toggle</span>
+            <select id="styleSelector" class="d-inline-block w-25 form-select">
+                <option value="css/anukrati.css" selected>Anukrati</option>
+                <option value="css/rohan.css">Rohan</option>
+            </select>
+        </div>
+    </nav>
+    <nav class="mt-5 navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/bridge.png" alt="Logo" width="30" class="d-inline-block align-text-top" />
@@ -34,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="attractions.html">Attractions</a>
@@ -43,7 +52,7 @@
                         <a class="nav-link" href="restaurants.html">Restaurants</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="transport.html">Transportation</a>
+                        <a class="nav-link active" href="#">Transportation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
@@ -73,19 +82,19 @@
                     alt="Dublin Bikes" />
             </div>
             <div class="col-lg-6 my-auto p-5 text-lg-start">
-                <h2 class="display-4 text-info"><i class="fa-solid fa-person-biking me-2"></i>Dublin Bikes</h2>
+                <h2 class="display-4 text-info transport-block-title-1"><i class="fa-solid fa-person-biking me-2"></i>Dublin Bikes</h2>
                 <p class="lead">Explore the city eco-friendly, conveniently, and affordably.</p>
                 <dl class="row small">
-                    <dt class="col-sm-4 fw-bold">How It Works:</dt>
-                    <dd class="col-sm-8">
+                    <dt class="col-sm-2 fw-bold">How It Works:</dt>
+                    <dd class="col-sm-10">
                         <p><i class="fa-solid fa-person-biking text-success"></i> Over 100 docking stations citywide.
                         </p>
                         <p><i class="fa-solid fa-stopwatch text-warning"></i> First 30 minutes free for every trip.</p>
                     </dd>
-                    <dt class="col-sm-4 fw-bold">Pricing:</dt>
-                    <dd class="col-sm-8">
-                        <p><i class="fa-solid fa-euro-sign text-primary"></i> €3.5 for a day pass.</p>
-                        <p><i class="fa-solid fa-euro-sign text-primary"></i> €5 for a 3-day pass.</p>
+                    <dt class="col-sm-2 fw-bold">Pricing:</dt>
+                    <dd class="col-sm-10">
+                        <p><i class="fa-solid fa-euro-sign text-primary"></i>3.5 for a day pass.</p>
+                        <p><i class="fa-solid fa-euro-sign text-primary"></i>5 for a 3-day pass.</p>
                     </dd>
                 </dl>
                 <p>
@@ -101,12 +110,12 @@
         <!-- Taxis Section -->
         <div class="row mb-5">
             <div class="col-lg-6 order-lg-2 transport-img-container">
-                <img src="img/transport/dublin-taxi.jpg" class="img-fluid shadow rounded transport-img"
+                <img src="img/transport/dublin-taxi.jpg" class="img-fluid shadow rounded transport-img transport-img-alt"
                     alt="Dublin Taxi" />
             </div>
             <div class="col-lg-6 my-auto p-5 text-lg-end order-lg-1">
-                <h2 class="display-4 text-warning"><i class="fa-solid fa-taxi me-2"></i>Taxis</h2>
-                <p class="lead">Widely available with app-based services. Average city center <i
+                <h2 class="display-4 text-warning transport-block-title-2"><i class="fa-solid fa-taxi me-2"></i>Taxis</h2>
+                <p class="lead">Widely available with app-based services. <br>Average city center <i
                         class="fa-solid fa-arrow-right-arrow-left"></i> Airport fare: ~€25–€30.</p>
                 <p>
                     <a href="https://www.free-now.com/ie/" class="btn btn-outline-primary me-2 mb-2" target="_blank"><i
@@ -129,11 +138,11 @@
                     alt="Car Rentals" />
             </div>
             <div class="col-lg-6 my-auto p-5 text-lg-start">
-                <h2 class="display-4 text-success"><i class="fa-solid fa-car-rear me-2"></i>Car Rentals</h2>
+                <h2 class="display-4 text-success transport-block-title-3"><i class="fa-solid fa-car-rear me-2"></i>Car Rentals</h2>
                 <p class="lead">Perfect for exploring beyond the city.</p>
                 <dl class="row small">
-                    <dt class="col-sm-4 fw-bold">Tips:</dt>
-                    <dd class="col-sm-8">
+                    <dt class="col-sm-2 fw-bold">Tips:</dt>
+                    <dd class="col-sm-10">
                         <p><i class="fa-solid fa-check text-success"></i> Ireland drives on the left.</p>
                         <p><i class="fa-solid fa-check text-success"></i> Book early for best rates.</p>
                     </dd>
@@ -160,7 +169,7 @@
     <!-- Map Section -->
     <div class="row m-5 ">
         <div class="col-12 text-center">
-            <h1 class="display-3 fw-bold text-primary shadow p-3 rounded">
+            <h1 class="display-3 fw-bold text-primary shadow p-3 rounded public-transpoart-title">
                 <i class="fa-solid fa-train-subway me-2"></i>Public Transport
             </h1>
             
@@ -179,45 +188,52 @@
     <footer class="shadow bg-dark text-bg-dark mt-auto">
         <div class="container">
             <div class="row py-5">
-                <div class="col-md-2">
-                    <img src="img/bridge.png" alt="" class="footer-icon" />
-                    <h5 class="dispaly-5">Brand Name</h5>
+                <div class="col-lg-2">
+                    <img src="img/bridge.png" alt="logo image" class="footer-icon">
+                    <h5 class="dispaly-5 text-center text-lg-start py-3">Discover Dublin</h5>
                 </div>
-                <div class="col-md-3 ft-menu">
-                    <h5 class="dispaly-5">Menu</h5>
+                <div class="col-lg-3 ft-menu">
+                    <h5 class="dispaly-5 d-none d-lg-block">Menu</h5>
                     <p class="m-0 border-bottom border-secondary">
-                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Lorem.</a>
+                        <a href="index.html" class="text-decoration-none text-secondary d-block pt-3 pb-1">Home</a>
                     </p>
                     <p class="m-0 border-bottom border-secondary">
-                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Facere!</a>
+                        <a href="attractions.html" class="text-decoration-none text-secondary d-block pt-3 pb-1">Attractions</a>
                     </p>
                     <p class="m-0 border-bottom border-secondary">
-                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Maiores.</a>
+                        <a href="restaurants.html" class="text-decoration-none text-secondary d-block pt-3 pb-1">Restaurants</a>
                     </p>
                     <p class="m-0 border-bottom border-secondary">
-                        <a href="#" class="text-decoration-none text-secondary d-block pt-3 pb-1">Omnis!</a>
+                        <a href="transport.html" class="text-decoration-none text-secondary d-block pt-3 pb-1">Transportation</a>
                     </p>
                     <p class="m-0 border-bottom border-secondary">
-                        <a href="#" class="text-decoration-none text-secondary d-block pt-3">Esse?</a>
+                        <a href="contact.html" class="text-decoration-none text-secondary d-block pt-3">Contact Us</a>
                     </p>
                 </div>
-                <div class="col-md-3">
-                    <img src="img/earth-globe.png" class="d-block footer-icon m-auto my-5" alt="" />
+                <div class="col-md-3 d-none d-lg-block">
+                    <img src="img/earth-globe.png" class="d-block footer-icon m-auto my-5" alt="image of globe">
                 </div>
-                <div class="col-md-4">
-                    <h5 class="dispaly-5">Stay up to date</h5>
+                <div class="col-lg-4">
+                    <h5 class="dispaly-5 mt-5 mt-lg-0">Stay up to date</h5>
                     <div class="input-group input-group-lg my-3">
-                        <input type="text" class="form-control" placeholder="your@email.com" id="subscribe-input-2" />
+                        <input type="text" class="form-control" placeholder="your@email.com" id="subscribe-input-2">
                         <button class="subscribe-btn btn btn-warning" data-subscribe-btn-for="subscribe-input-2"
-                            type="button">
-                            Subscribe
-                        </button>
+                            type="button">Subscribe</button>
                     </div>
                 </div>
             </div>
             <div class="row text-center py-3 sub-footer">
-                <div class="col-md-6 text-md-start">&copy; 2024-2025 Discover Dublin</div>
-                <div class="col-md-6 text-md-end">socail icons</div>
+                <div class="col-md-6 order-last order-lg-first text-lg-start">&copy; 2024-2025 Discover Dublin</div>
+                <div class="col-md-6 order-first order-lg-last text-lg-end social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-reddit-alien"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
     </footer>
@@ -225,6 +241,7 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/sweetalert2@11.js"></script>
+    <script src="js/transport.js"></script>
 </body>
 
 </html>

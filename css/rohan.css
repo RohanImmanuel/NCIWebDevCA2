@@ -237,9 +237,12 @@ header .fa-circle-down{
 }
 .public-transpoart-title{
     background-color: #3F5865;
-    color: white;
+    color: white !important;
     margin-bottom: 0;
-    padding: 0 0.2em 0.2em;
+    padding: 0.2em !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    text-align: left;
 }
 .public-transpoart-title i{
     transform: scale(0.8);
@@ -253,3 +256,169 @@ header .fa-circle-down{
 .transport-car-rentals{
     background-image: url(../img/transport/carrentals.jpg);
 }
+
+/* Outline Primary Button */
+.btn-outline-primary {
+    background-color: #6c63ff; /* Purple */
+    color: #fff;
+    border: 2px solid #6c63ff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #574dcf; /* Darker Purple */
+    border-color: #574dcf;
+    transform: translateY(-2px);
+}
+
+/* Outline Secondary Button */
+.btn-outline-secondary {
+    background-color: #6c757d; /* Gray */
+    color: #fff;
+    border: 2px solid #6c757d;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #545b62; /* Darker Gray */
+    border-color: #545b62;
+    transform: translateY(-2px);
+}
+
+/* Outline Success Button */
+.btn-outline-success {
+    background-color: #28c76f; /* Green */
+    color: #fff;
+    border: 2px solid #28c76f;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #1f9e57; /* Darker Green */
+    border-color: #1f9e57;
+    transform: translateY(-2px);
+}
+
+/* Outline Danger Button */
+.btn-outline-danger {
+    background-color: #ff4f5e; /* Red */
+    color: #fff;
+    border: 2px solid #ff4f5e;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-danger:hover {
+    background-color: #d63c4a; /* Darker Red */
+    border-color: #d63c4a;
+    transform: translateY(-2px);
+}
+
+/* Outline Warning Button */
+.btn-outline-warning {
+    background-color: #ffc107; /* Yellow */
+    color: #212529;
+    border: 2px solid #ffc107;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-warning:hover {
+    background-color: #e0a800; /* Darker Yellow */
+    border-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+/* Outline Info Button */
+.btn-outline-info {
+    background-color: #17a2b8; /* Cyan */
+    color: #fff;
+    border: 2px solid #17a2b8;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-info:hover {
+    background-color: #117a8b; /* Darker Cyan */
+    border-color: #117a8b;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Outline Light Button */
+.btn-outline-light {
+    background-color: #f8f9fa; /* Light Gray */
+    color: #212529;
+    border: 2px solid #f8f9fa;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #e2e6ea; /* Darker Light Gray */
+    border-color: #e2e6ea;
+    transform: translateY(-2px);
+}
+
+/* Outline Dark Button */
+.btn-outline-dark {
+    background-color: #343a40; /* Dark Gray */
+    color: #fff;
+    border: 2px solid #343a40;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #23272b; /* Darker Gray */
+    border-color: #23272b;
+    transform: translateY(-2px);
+}
+
+.transport-img{
+    filter: drop-shadow(rgba(0,0,0,0.2) 0 0 40px);
+    transform: perspective(750px) rotateY(-30deg) scale(0.9, 0.9);
+    transition: 0.4s ease-in-out transform;
+}
+.transport-img.transport-img-alt{
+    transform: perspective(750px) rotateY(30deg) scale(0.9, 0.9);
+}
+.row:hover .transport-img{
+    filter: unset;
+    transform: translate3d(0, 0, -250px);
+    box-shadow: unset;
+}
+@media (max-width: 992px) {
+    .transport-img{
+        filter: unset;
+        transform: none;
+    }
+}
+
+.transport-block-title-1,
+.transport-block-title-2,
+.transport-block-title-3{
+    position: relative;
+    color: white !important;
+    padding: 0 0.5em;
+    border-bottom: 10px solid rgba(0,0,0,0.5);
+}
+.transport-block-title-1{
+    background-color: rgb(13,202,240);
+}
+.transport-block-title-2{
+    background-color: rgb(255,193,7);
+}
+.transport-block-title-3{
+    background-color: rgb(25,135,84);
+}
+
+.transport-block-title-1:before,
+.transport-block-title-2:before,
+.transport-block-title-3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.5) #fff;
+}
+
+
+
