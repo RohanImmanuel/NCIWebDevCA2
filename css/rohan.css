@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+header.transport{
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+header.transport video{
+    filter: brightness(0.5);
+}
+
 
 .subscribe-box{
     background-color: #fff;
