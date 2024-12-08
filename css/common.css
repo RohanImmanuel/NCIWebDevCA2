@@ -100,3 +100,23 @@ header .fa-circle-down{
     transform: scale3d(1, 1, 1);
   }
 }
+
+#themeToggleBtn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff; /* Bootstrap Primary Color */
+    color: white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 5rem;
+    margin-right: 2rem;
+}
+
+#themeToggleBtn:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
