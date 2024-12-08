@@ -12,42 +12,42 @@
                 name: "Dublin Castle",
                 coords: [53.3437935, -6.2674693],
                 url: "https://dublincastle.ie",
-                image: "/img/attractions/dublin-castle.jpg"
+                image: "img/attractions/dublin-castle.jpg"
             },
             {
                 name: "Phoenix Park",
                 coords: [53.356937, -6.329998],
                 url: "https://www.phoenixpark.ie",
-                image: "/img/attractions/phoenix-park.avif"
+                image: "img/attractions/phoenix-park.avif"
             },
             {
                 name: "Guinness Storehouse",
                 coords: [53.341864, -6.28686],
                 url: "https://www.guinness-storehouse.com",
-                image: "/img/attractions/guinness-storehouse.jpg"
+                image: "img/attractions/guinness-storehouse.jpg"
             },
             {
                 name: "St. Stephen's Green",
                 coords: [53.338190, -6.259262],
-                image: "/img/attractions/st-stephens-green.jpg"
+                image: "img/attractions/st-stephens-green.jpg"
             },
             {
                 name: "Trinity College Library",
                 coords: [53.343, -6.254],
                 url: "https://www.tcd.ie/library",
-                image: "/img/attractions/trinity-college-library.webp"
+                image: "img/attractions/trinity-college-library.webp"
             },
             {
                 name: "Kilmainham Gaol",
                 coords: [53.345, -6.297],
                 url: "https://www.kilmainhamgaolmuseum.ie/",
-                image: "/img/attractions/kilmainham-gaol.webp"
+                image: "img/attractions/kilmainham-gaol.webp"
             },
             {
                 name: "Epic Museum",
                 coords: [53.348, -6.248],
                 url: "https://epicchq.com/",
-                image: "/img/attractions/epic-museum.jpg"
+                image: "img/attractions/epic-museum.jpg"
             }
         ];
 
