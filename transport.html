@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/fa.min.css" />
-     <link id="theme" rel="stylesheet" href="css/anukrati.css" />
-     <!--<link rel="stylesheet" href="css/anukrati.css" />--> 
+     <link id="themeStylesheet" rel="stylesheet" href="css/anukrati.css" />
+     <!--<link rel="stylesheet" href="css/rohan.css" />--> 
     <link rel="stylesheet" href="css/common.css" />
 
       <!-- Favicon and App Icons -->
@@ -24,16 +24,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
-        <div class="container">
-            <span class="navbar-brand">CSS Style Toggle</span>
-            <select id="styleSelector" class="d-inline-block w-25 form-select">
-                <option value="css/anukrati.css" selected>Anukrati</option>
-                <option value="css/rohan.css">Rohan</option>
-            </select>
-        </div>
-    </nav>
-    <nav class="mt-5 navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <button id="themeToggleBtn" class="btn btn-primary">Switch to Rohan Theme</button>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/bridge.png" alt="Logo" width="30" class="d-inline-block align-text-top" />
