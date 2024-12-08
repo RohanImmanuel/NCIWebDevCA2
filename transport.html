@@ -2,27 +2,30 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Information -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Discover Dublin | Transport</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/fa.min.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link id="themeStylesheet" rel="stylesheet" href="css/anukrati.css" />
-
-      <!-- Favicon and App Icons -->
-      <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-      <link rel="manifest" href="favicons/site.webmanifest">
-  
-
+    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
 </head>
 
 <body>
+    <!-- Toggle Button -->
     <div class="container text-center">
         <button id="themeToggleBtn" class="btn btn-primary">Switch to Rohan's Styling</button>
     </div>
+
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -33,7 +36,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse w-100" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -51,19 +54,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
     </nav>
-    
-    
+
+    <!-- Hero Section -->
     <header>
-        
         <video class="min-vh-100 w-100" autoplay preload muted loop playsinline>
             <source src="videos/transport.mp4" type="video/mp4" />
         </video>
-        
         <h1 class="display-1">
             Your Guide to Getting Around Dublin
             <small>Dublin’s transport system is designed to make travel easy <br />
@@ -72,6 +73,7 @@
         <i class="fa-regular fa-circle-down"></i>
     </header>
 
+    <!-- Transport Options Section -->
     <div class="container py-5 home-ft">
         <!-- Dublin Bikes Section -->
         <div class="row mb-5">
@@ -170,19 +172,17 @@
             <h1 class="display-3 fw-bold text-primary shadow p-3 rounded">
                 <i class="fa-solid fa-train-subway me-2"></i>Public Transport
             </h1>
-            
+
             <div class="w-100" style="height: 80vh;">
-                <iframe
-                    id="public-transport-map"
-                    class="w-100 h-100 shadow rounded-bottom border-0"
+                <iframe id="public-transport-map" class="w-100 h-100 shadow rounded-bottom border-0"
                     title="public-transport-map"
                     src="https://journeyplanner-production.transportforireland.ie/departures?wrapper=false&">
                 </iframe>
             </div>
         </div>
     </div>
-    
 
+    <!-- Footer -->
     <footer class="shadow bg-dark text-bg-dark mt-auto">
         <div class="container">
             <div class="row py-5">
@@ -196,13 +196,16 @@
                         <a href="index.html" class="text-decoration-none text-secondary d-block pt-3 pb-1">Home</a>
                     </p>
                     <p class="m-0 border-bottom border-secondary">
-                        <a href="attractions.html" class="text-decoration-none text-secondary d-block pt-3 pb-1">Attractions</a>
+                        <a href="attractions.html"
+                            class="text-decoration-none text-secondary d-block pt-3 pb-1">Attractions</a>
                     </p>
                     <p class="m-0 border-bottom border-secondary">
-                        <a href="restaurants.html" class="text-decoration-none text-secondary d-block pt-3 pb-1">Restaurants</a>
+                        <a href="restaurants.html"
+                            class="text-decoration-none text-secondary d-block pt-3 pb-1">Restaurants</a>
                     </p>
                     <p class="m-0 border-bottom border-secondary">
-                        <a href="transport.html" class="text-decoration-none text-secondary d-block pt-3 pb-1">Transportation</a>
+                        <a href="transport.html"
+                            class="text-decoration-none text-secondary d-block pt-3 pb-1">Transportation</a>
                     </p>
                     <p class="m-0 border-bottom border-secondary">
                         <a href="contact.html" class="text-decoration-none text-secondary d-block pt-3">Contact Us</a>
@@ -241,10 +244,11 @@
     <script src="js/sweetalert2@11.js"></script>
 
     <script>
+        // Toggle Button Logic
         document.getElementById('themeToggleBtn').addEventListener('click', function () {
             const themeLink = document.getElementById('themeStylesheet');
             const currentTheme = themeLink.getAttribute('href');
-    
+
             if (currentTheme === 'css/anukrati.css') {
                 themeLink.setAttribute('href', 'css/rohan.css');
                 this.textContent = 'Switch to Anukrati\'s Styling';
@@ -254,7 +258,7 @@
             }
         });
     </script>
-    
+
 </body>
 
 </html>

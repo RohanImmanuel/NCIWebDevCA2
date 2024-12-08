@@ -1,11 +1,17 @@
+/* General Styling */
+
 .text-justify{
     text-align: justify;
 }
+
+/* Navbar */
 
 .navbar-brand img{
     filter: invert(100%);
     margin-right: 0.5em;
 }
+
+/* Footer */
 
 .footer-icon{
     display: block;
@@ -37,6 +43,8 @@ footer .sub-footer{
 .social-icons a:hover{
     color: gold;
 }
+
+/* Header */
 
 header{
     height: 95vh;
@@ -101,6 +109,7 @@ header .fa-circle-down{
   }
 }
 
+/* Toggle Button */
 #themeToggleBtn {
     padding: 0.5rem 1rem;
     font-size: 1rem;
