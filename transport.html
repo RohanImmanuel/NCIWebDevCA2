@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Information -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Discover Dublin</title>
+    <title>Discover Dublin | Transport</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/fa.min.css" />
      <link id="theme" rel="stylesheet" href="css/anukrati.css" />
      <!--<link rel="stylesheet" href="css/anukrati.css" />--> 
@@ -32,7 +35,7 @@
     </nav>
     <nav class="mt-5 navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/bridge.png" alt="Logo" width="30" class="d-inline-block align-text-top" />
                 DiscoverDublin
             </a>
@@ -40,7 +43,8 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+
+            <div class="collapse navbar-collapse w-100" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -57,11 +61,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header>
         <video class="min-vh-100 w-100" autoplay preload muted loop playsinline>
             <source src="videos/transport.mp4" type="video/mp4" />
@@ -74,6 +80,7 @@
         <i class="fa-regular fa-circle-down"></i>
     </header>
 
+    <!-- Transport Options Section -->
     <div class="container py-5 home-ft">
         <!-- Dublin Bikes Section -->
         <div class="row mb-5">
@@ -172,19 +179,17 @@
             <h1 class="display-3 fw-bold text-primary shadow p-3 rounded public-transpoart-title">
                 <i class="fa-solid fa-train-subway me-2"></i>Public Transport
             </h1>
-            
+
             <div class="w-100" style="height: 80vh;">
-                <iframe
-                    id="public-transport-map"
-                    class="w-100 h-100 shadow rounded-bottom border-0"
+                <iframe id="public-transport-map" class="w-100 h-100 shadow rounded-bottom border-0"
                     title="public-transport-map"
                     src="https://journeyplanner-production.transportforireland.ie/departures?wrapper=false&">
                 </iframe>
             </div>
         </div>
     </div>
-    
 
+    <!-- Footer -->
     <footer class="shadow bg-dark text-bg-dark mt-auto">
         <div class="container">
             <div class="row py-5">
