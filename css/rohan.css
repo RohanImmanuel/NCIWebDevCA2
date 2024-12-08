@@ -395,7 +395,8 @@ header .fa-circle-down{
     box-shadow: unset;
 }
 @media (max-width: 992px) {
-    .transport-img{
+    .transport-img,
+    .transport-img.transport-img-alt{
         filter: unset;
         transform: none;
     }
