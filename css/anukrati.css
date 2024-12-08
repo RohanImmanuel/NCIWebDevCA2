@@ -256,7 +256,7 @@ input:nth-of-type(5):checked ~ .top-attractions {
     height: 100%;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), 
-        url('/img/contact/contact-bg-2.jpg');
+        url('img/contact/contact-bg-2.jpg');
     background-size: contain;
     background-position: center;
     padding-top: 80px;
