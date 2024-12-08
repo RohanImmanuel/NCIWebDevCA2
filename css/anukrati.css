@@ -310,7 +310,7 @@ input:nth-of-type(5):checked ~ .top-attractions {
     text-align: left;
 }
 
-.form-control {
+.contact-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -320,15 +320,15 @@ input:nth-of-type(5):checked ~ .top-attractions {
     color: white;
 }
 
-textarea.form-control {
+textarea.contact-input {
     resize: none;
 }
 
-.form-control::placeholder {
+.contact-input::placeholder {
     color: white;
 }
 
-.form-control:focus {
+.contact-input:focus {
     outline: none;
     border-color: #f0f0f0;
 }
